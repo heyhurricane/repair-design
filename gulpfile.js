@@ -1,38 +1,37 @@
-// function defaultTask(cb) {
-//   // place code for your default task here
-//   cb();
-// }
-
-// exports.default = defaultTask
-
-const gulp        = require('gulp');
+const {src, dest, watch} = require('gulp');
 const browserSync = require('browser-sync').create();
 const cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
-
-gulp.task('hello', function(done){
-  console.log('Привет, мир!');
-  done();
-});
-
-
+const sass = require('gulp-sass');
 
 // Static server
-gulp.task('browser-sync', function() {
+function bs() {
+    serveSass();
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./src/"
         }
     });
-    gulp.watch("./*.html").on('change', browserSync.reload);
-});
+    watch("./src/**/*.html").on('change', browserSync.reload);
+    watch("./src/sass/**/*.sass").on('change', serveSass);
+    watch("./src/js/**/*.js").on('change', browserSync.reload);
+};
 
 
 
-gulp.task('mincss', function (done) {
+function mincss(done) {
     gulp.src('src/**/*.css')
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist'));
         done();
-});
+};
+
+function serveSass() {
+    return src("./src/sass/*.sass")
+        .pipe(sass())
+        .pipe(dest("./src/css"))
+        .pipe(browserSync.stream());
+};
+
+exports.serve = bs;
