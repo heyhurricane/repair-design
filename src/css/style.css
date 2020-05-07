@@ -320,16 +320,8 @@ template {
 
 .container {
   max-width: 1256px;
+  width: 85%;
   margin: auto; }
-
-.block {
-  -webkit-animation-name: show;
-  animation-name: show;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  animation-direction: reverse; }
 
 .button {
   padding: 13px 20px;
@@ -338,6 +330,11 @@ template {
   text-transform: uppercase; }
   .button--primary {
     background-color: #E3B873;
+    color: #ffffff;
+    font-family: 'Futura Demi', sans-serif; }
+  .button--outline {
+    border: 1px solid #ffffff;
+    background-color: transparent;
     color: #ffffff; }
 
 .header {
@@ -356,7 +353,8 @@ template {
 
 .logo {
   color: #E3B873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: 'Futura Demi', sans-serif; }
 
 .nav__item {
   text-decoration: none;
@@ -365,25 +363,46 @@ template {
   margin-right: 40px; }
 
 .phone {
-  color: #E3B873; }
+  color: #E3B873;
+  font-family: 'Futura Demi', sans-serif; }
 
 .contacts__phone {
   margin-right: 45px; }
 
 .hero {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 100px;
   background: #131313 url("../img/herobg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #ffffff; }
+  .hero__button {
+    margin-right: 20px; }
+  .hero__text {
+    font-size: 22px;
+    max-width: 500px; }
+  .hero__content {
+    max-width: 670px; }
   .hero__instagram {
     position: absolute;
     left: 0;
     top: 0;
     max-width: 80px;
     height: 100%; }
-  .hero__title {
-    margin: 0; }
+  .hero__scroll-down {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    min-width: 247px;
+    min-height: 97px;
+    background-color: #131313;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none; }
 
 .instagram {
   display: flex;
@@ -391,10 +410,22 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    font-family: 'Futura Demi', sans-serif;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
     transform: rotate(90deg); }
+
+.title {
+  margin: 0;
+  font-family: 'Yeseva One', cursive;
+  text-transform: uppercase;
+  font-size: 40px; }
+  .title--primary {
+    color: #E3B873; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 body {
   font-family: 'Futura Book', sans-serif;
