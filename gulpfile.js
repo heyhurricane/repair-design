@@ -30,7 +30,7 @@ function mincss(done) {
 };
 
 function serveSass() {
-    return src("./src/sass/**/*.sass")
+    return src("./src/sass/**/*.sass", "./src/sass/**/*.scss")
         .pipe(sass())
         .pipe(autoprefixer({
             cascade: false
