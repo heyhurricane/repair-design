@@ -356,6 +356,9 @@ body {
   font-family: 'Futura Book', sans-serif;
   font-size: 1rem; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
+
 .section-title {
   text-align: center;
   text-transform: uppercase;
@@ -437,7 +440,7 @@ body {
     padding-top: 0; }
   .hero__button {
     margin-right: 15px;
-    margin-top: 25px; }
+    margin-top: 22.4px; }
     .hero__button--primary {
       padding: 19px 27px; }
     .hero__button--outline {
@@ -450,7 +453,7 @@ body {
   .hero__content {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 1.28rem; }
+    margin-left: 2.08rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -541,11 +544,10 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem;
-    letter-spacing: 2.3px;
-    line-height: 1.6; }
+    font-size: 1.9rem;
+    line-height: 1.44; }
     .title--primary {
-      letter-spacing: 1.9px; }
+      letter-spacing: -0.2px; }
   .hero {
     display: block;
     margin-top: 3.5rem; }
@@ -558,7 +560,8 @@ body {
       margin-bottom: 2.78rem;
       letter-spacing: 0.6px;
       margin-top: 1rem;
-      max-width: 94%; }
+      max-width: 94%;
+      line-height: 1.45; }
     .hero__button {
       display: block;
       min-width: 100%;
