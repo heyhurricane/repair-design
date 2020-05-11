@@ -15,6 +15,8 @@
       margin-left: 0
 
 @media screen and ( max-width: 576px )
+  .container
+    width: 90%
   .contacts
     &__phone
       margin-right: 0
@@ -30,18 +32,22 @@
       letter-spacing: 1.9px
   .hero
     display: block
-    margin-top: 3.9rem
+    margin-top: 3.5rem
     &__content
-      max-width: 24.14rem      
+      // max-width: 24.14rem 
+      max-width: 100%
     &__scroll-down
       display: none
     &__text
       font-size: 1.39rem
-      margin-bottom: 2.28rem
+      margin-bottom: 2.78rem
       letter-spacing: 0.6px
+      margin-top: 1rem
+      max-width: 94%
     &__button
       display: block
-      min-width: 28.24rem
+      // min-width: 28.24rem
+      min-width: 100%
       margin-bottom: 1.85rem
       font-size: 1.1rem
 
@@ -49,3 +55,9 @@
   .hero
     &__scroll-down
       display: none
+
+
+// @media screen and ( max-width: 375px )
+//   .hero
+//     &__button
+//       min-width: 23.84rem

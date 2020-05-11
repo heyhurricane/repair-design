@@ -530,6 +530,8 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 576px) {
+  .container {
+    width: 90%; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
@@ -544,18 +546,20 @@ body {
       letter-spacing: 1.9px; }
   .hero {
     display: block;
-    margin-top: 3.9rem; }
+    margin-top: 3.5rem; }
     .hero__content {
-      max-width: 24.14rem; }
+      max-width: 100%; }
     .hero__scroll-down {
       display: none; }
     .hero__text {
       font-size: 1.39rem;
-      margin-bottom: 2.28rem;
-      letter-spacing: 0.6px; }
+      margin-bottom: 2.78rem;
+      letter-spacing: 0.6px;
+      margin-top: 1rem;
+      max-width: 94%; }
     .hero__button {
       display: block;
-      min-width: 28.24rem;
+      min-width: 100%;
       margin-bottom: 1.85rem;
       font-size: 1.1rem; } }
 
