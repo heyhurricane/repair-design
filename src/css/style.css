@@ -617,13 +617,16 @@ img {
   .section {
     padding: 0; }
     .section-title {
-      color: #ffffff; }
+      color: #131313; }
       .section-title__heading {
         font-size: 1.83rem; }
+        .section-title__headingdark {
+          color: #ffffff; }
       .section-title__text {
         font-size: 1.245rem;
         line-height: 1.4;
-        margin-top: 1.5rem; }
+        margin-top: 1.5rem;
+        color: #ffffff; }
   .types__section-title {
     margin-bottom: 3.4rem; }
   .card__text {
