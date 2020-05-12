@@ -14,7 +14,7 @@
     &__content
       margin-left: 0
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 850px )
   .row
     flex-direction: column
     align-items: center
@@ -32,10 +32,11 @@
   .section
     padding: 0
     &-title
+      color: $light
       &__heading        
         font-size: 1.83rem
       &__text
-        font-size: 1.23rem
+        font-size: 1.245rem
         line-height: 1.4
         margin-top: 1.5rem
   .types
@@ -90,9 +91,11 @@
       min-width: 100%
       margin-bottom: 1.85rem
       font-size: 1.1rem
-  .design-price
-    padding-left: 3.8rem
-    padding-right: 4.2rem
+  .design
+    background-color: $dark
+    &-price
+      padding-left: 3.8rem
+      padding-right: 4.2rem
 
 @media screen and ( max-height: 520px )
   .hero
