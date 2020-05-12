@@ -320,7 +320,7 @@ template {
 
 .container {
   max-width: 1256px;
-  width: 100%;
+  width: 95%;
   margin: auto; }
 
 .button {
@@ -466,7 +466,7 @@ img {
   .hero__content {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 2.08rem; }
+    margin-left: 5.71rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -547,7 +547,7 @@ img {
 .card__text {
   position: relative;
   margin: 0 auto;
-  margin-top: -9.4rem;
+  margin-top: -9.3rem;
   padding: 0.59rem 2.14rem;
   max-width: 23.6rem;
   background-color: #ffffff;
@@ -640,7 +640,8 @@ img {
     padding: 1.014rem 2.586rem;
     font-size: 1.24rem; }
   .container {
-    width: 90%; }
+    width: 90%;
+    padding: 0; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
