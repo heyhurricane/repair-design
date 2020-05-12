@@ -673,7 +673,8 @@ img {
       margin-bottom: 1.85rem;
       font-size: 1.1rem; }
   .design {
-    background-color: #131313; }
+    background-color: #131313;
+    padding-top: 1rem; }
     .design-price {
       padding-left: 3.8rem;
       padding-right: 4.2rem; } }
