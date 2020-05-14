@@ -387,6 +387,14 @@ template {
     cursor: pointer;
     margin-right: 0.64rem; }
 
+.scroll-up {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border: 1px solid #131313;
+  color: #131313;
+  cursor: pointer; }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 

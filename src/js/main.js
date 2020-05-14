@@ -53,5 +53,22 @@ $(document).ready(function () {
       modalActive = !(modalActive);
     }
   });
-
+  // $( "#target" ).keyup(function() {
+  //   alert( "Handler for .keyup() called." );
+  // });
+  $(document).ready(function(){   
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 0) {
+            $('.scroll-up').fadeIn();
+        } else {
+            $('.scroll-up').fadeOut();
+        }
+    });
+    $('.scroll-up').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 900);
+        return false;
+    });
+});
 });
