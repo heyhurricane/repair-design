@@ -331,8 +331,13 @@ template {
 .col-30 {
   flex-basis: 33%; }
 
-.col-50 {
-  width: 50%; }
+.col-40 {
+  width: 40%;
+  margin-right: 3.93rem; }
+
+.col-60 {
+  width: 60%;
+  margin-top: 18px; }
 
 .button {
   padding: 12px 20px;
@@ -437,7 +442,8 @@ img {
       font-size: 1.43rem;
       line-height: 138.6%; }
       .section-title__heading--primary {
-        color: #E3B873; }
+        color: #E3B873;
+        font-size: 1.77rem; }
     .section-title__word {
       display: flex;
       align-items: center; }
@@ -456,7 +462,8 @@ img {
       .section-title__text--projects {
         font-size: 1.285rem;
         line-height: 2.07rem;
-        max-width: 31.57rem; }
+        max-width: 31.57rem;
+        margin-bottom: 2.57rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -722,13 +729,19 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.swiper-container {
+  padding-bottom: 5.71rem; }
+  .swiper-container--photo {
+    padding-bottom: 0; }
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
   .swiper-slide__text {
     flex-basis: 50%;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+    margin-right: -3.66rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -738,7 +751,9 @@ img {
     margin-bottom: 0.64rem; }
 
 .swiper-pagination-bullet {
-  background-color: rgba(255, 255, 255, 0.3); }
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 9px;
+  height: 9px; }
   .swiper-pagination-bullet-active {
     background-color: #ffffff; }
 
@@ -762,6 +777,9 @@ img {
   width: auto;
   bottom: -2px;
   top: auto; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 10px; }
 
 @media screen and (max-width: 1300px) {
   html {
@@ -787,7 +805,7 @@ img {
     margin-bottom: 7.3rem; }
   .card__text {
     margin-left: -0.3px; }
-  .col-50 {
+  .col-40, .col-60 {
     width: 100%;
     margin-bottom: 2.36rem; } }
 
