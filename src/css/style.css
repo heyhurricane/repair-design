@@ -738,6 +738,11 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide img {
+    width: 48.5rem;
+    height: 34.43rem;
+    -o-object-fit: cover;
+    object-fit: cover; }
   .swiper-slide__value {
     line-height: 1.4;
     font-size: 14.9px; }
@@ -747,7 +752,7 @@ img {
     flex-basis: 50%;
     margin-bottom: 0;
     padding-bottom: 1.5rem;
-    margin-right: -3.66rem; }
+    margin-right: -4.26rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -812,8 +817,9 @@ img {
   .card__text {
     margin-left: -0.3px; }
   .col-40, .col-60 {
-    width: 90%;
-    margin-bottom: 2.36rem; } }
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2.86rem; } }
 
 @media screen and (max-width: 576px) {
   .section {
@@ -837,7 +843,8 @@ img {
           font-size: 1.145rem;
           letter-spacing: 0.1px;
           line-height: 1.65;
-          margin-bottom: 1.87rem; }
+          margin-bottom: 1.87rem;
+          padding-right: 40px; }
   .types__section-title {
     margin-bottom: 3.4rem; }
   .card__text {
@@ -892,13 +899,21 @@ img {
     .design-price {
       padding-left: 3.8rem;
       padding-right: 4.2rem; }
+  .swiper-container {
+    width: 100%;
+    padding-bottom: 3.31rem; }
   .swiper-slide__heading {
-    letter-spacing: -0.8px;
-    margin-bottom: 0.54rem; }
+    letter-spacing: 0.8px;
+    font-size: 1.085rem;
+    margin-bottom: 0.74rem; }
   .swiper-slide__value {
-    letter-spacing: -0.4px; }
+    letter-spacing: -0.5px; }
   .swiper-slide__text {
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem;
+    margin-right: -8.1px; }
+  .swiper-slide img {
+    width: 28.086rem;
+    height: 16.73rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
