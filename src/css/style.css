@@ -737,6 +737,8 @@ img {
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide-active {
+    width: 100%; }
   .swiper-slide__text {
     flex-basis: 50%;
     margin-bottom: 0;
@@ -806,7 +808,7 @@ img {
   .card__text {
     margin-left: -0.3px; }
   .col-40, .col-60 {
-    width: 100%;
+    width: 90%;
     margin-bottom: 2.36rem; } }
 
 @media screen and (max-width: 576px) {
