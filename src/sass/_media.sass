@@ -29,11 +29,13 @@
       margin-left: -0.3px
 
 @media screen and ( max-width: 576px )
-
   .section
     padding: 0
     &-title
       color: $dark
+      &__word
+        &::after
+          display: none
       &__heading        
         font-size: 1.83rem
         &dark
@@ -102,6 +104,10 @@
     &-price
       padding-left: 3.8rem
       padding-right: 4.2rem
+  .col
+    &-50
+      width: 100%
+      margin-bottom: 2.36rem
 
 @media screen and ( max-height: 520px )
   .hero

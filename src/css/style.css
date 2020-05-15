@@ -793,6 +793,8 @@ img {
     padding: 0; }
     .section-title {
       color: #131313; }
+      .section-title__word::after {
+        display: none; }
       .section-title__heading {
         font-size: 1.83rem; }
         .section-title__headingdark {
@@ -855,7 +857,10 @@ img {
     padding-top: 1rem; }
     .design-price {
       padding-left: 3.8rem;
-      padding-right: 4.2rem; } }
+      padding-right: 4.2rem; }
+  .col-50 {
+    width: 100%;
+    margin-bottom: 2.36rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
