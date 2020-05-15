@@ -16,18 +16,39 @@ img
   
 .section
   padding: 60px
+  &--dark
+    background-color: $dark
+    color: $light
   &-title
     text-align: center
     text-transform: uppercase
     font-family: 'Yeseva One', cursive
+    &--left
+      text-align: left
     &__heading
       font-size: 1.43rem
+      line-height: 138.6%
+      &--primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
     &__text
       text-transform: none
       font-family: 'Futura Book', sans-serif
       font-size: 1.43rem
       line-height: 1.25
       margin-bottom: 3.57rem
+      &--projects
+        font-size: 1.285rem
+        line-height:  2.07rem
+        max-width: 31.57rem
     &__image
       display: flex
       justify-content: center

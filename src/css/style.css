@@ -323,6 +323,17 @@ template {
   width: 95%;
   margin: auto; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col-30 {
+  flex-basis: 33%; }
+
+.col-50 {
+  width: 50%; }
+
 .button {
   padding: 12px 20px;
   border: none;
@@ -413,18 +424,39 @@ img {
 
 .section {
   padding: 60px; }
+  .section--dark {
+    background-color: #131313;
+    color: #ffffff; }
   .section-title {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title--left {
+      text-align: left; }
     .section-title__heading {
-      font-size: 1.43rem; }
+      font-size: 1.43rem;
+      line-height: 138.6%; }
+      .section-title__heading--primary {
+        color: #E3B873; }
+    .section-title__word {
+      display: flex;
+      align-items: center; }
+      .section-title__word::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
     .section-title__text {
       text-transform: none;
       font-family: 'Futura Book', sans-serif;
       font-size: 1.43rem;
       line-height: 1.25;
       margin-bottom: 3.57rem; }
+      .section-title__text--projects {
+        font-size: 1.285rem;
+        line-height: 2.07rem;
+        max-width: 31.57rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -500,6 +532,15 @@ img {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     padding-top: 0; }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3.46rem;
+    background-color: #131313; }
   .hero__button {
     margin-right: 15px;
     margin-top: 22.4px; }
@@ -523,6 +564,7 @@ img {
     max-width: 87px;
     height: 100%; }
   .hero__scroll-down {
+    z-index: 3;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -581,14 +623,6 @@ img {
   .title--primary {
     color: #E3B873;
     letter-spacing: -0.4px; }
-
-.row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.col {
-  flex-basis: 33%; }
 
 .types__section-title {
   margin-bottom: 2.2rem; }
@@ -687,6 +721,47 @@ img {
     margin-bottom: 1.42rem; }
   .modal__button {
     align-self: flex-end; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem;
+    padding-bottom: 2rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: 'Yeseva One', cursive;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background-color: #ffffff; }
+
+.swiper-button-prev, .swiper-button-next {
+  background-size: 42px;
+  width: 42px;
+  height: 14px;
+  bottom: 0;
+  top: auto; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  left: 0; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: -2px;
+  top: auto; }
 
 @media screen and (max-width: 1300px) {
   html {
