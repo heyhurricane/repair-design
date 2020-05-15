@@ -337,7 +337,7 @@ template {
 
 .col-60 {
   width: 60%;
-  margin-top: 18px; }
+  margin-top: 22.2px; }
 
 .button {
   padding: 12px 20px;
@@ -440,10 +440,11 @@ img {
       text-align: left; }
     .section-title__heading {
       font-size: 1.43rem;
-      line-height: 138.6%; }
+      line-height: 1.5; }
       .section-title__heading--primary {
         color: #E3B873;
-        font-size: 1.77rem; }
+        font-size: 1.77rem;
+        margin-bottom: 22.4px; }
     .section-title__word {
       display: flex;
       align-items: center; }
@@ -463,7 +464,7 @@ img {
         font-size: 1.285rem;
         line-height: 2.07rem;
         max-width: 31.57rem;
-        margin-bottom: 2.57rem; }
+        margin-bottom: 2.17rem; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -730,13 +731,16 @@ img {
     align-self: flex-end; }
 
 .swiper-container {
-  padding-bottom: 5.71rem; }
+  padding-bottom: 5.51rem; }
   .swiper-container--photo {
     padding-bottom: 0; }
 
 .swiper-slide {
   display: flex;
   flex-wrap: wrap; }
+  .swiper-slide__value {
+    line-height: 1.4;
+    font-size: 14.9px; }
   .swiper-slide-active {
     width: 100%; }
   .swiper-slide__text {
@@ -750,7 +754,7 @@ img {
     font-family: 'Yeseva One', cursive;
     color: #E3B873;
     text-transform: uppercase;
-    margin-bottom: 0.64rem; }
+    margin-bottom: 0.44rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
@@ -822,11 +826,18 @@ img {
         font-size: 1.83rem; }
         .section-title__headingdark {
           color: #ffffff; }
+        .section-title__heading--primary {
+          letter-spacing: -1.5px; }
       .section-title__text {
         font-size: 1.245rem;
         line-height: 1.4;
         margin-top: 1.5rem;
         color: #ffffff; }
+        .section-title__text--projects {
+          font-size: 1.145rem;
+          letter-spacing: 0.1px;
+          line-height: 1.65;
+          margin-bottom: 1.87rem; }
   .types__section-title {
     margin-bottom: 3.4rem; }
   .card__text {
@@ -880,7 +891,14 @@ img {
     padding-top: 1rem; }
     .design-price {
       padding-left: 3.8rem;
-      padding-right: 4.2rem; } }
+      padding-right: 4.2rem; }
+  .swiper-slide__heading {
+    letter-spacing: -0.8px;
+    margin-bottom: 0.54rem; }
+  .swiper-slide__value {
+    letter-spacing: -0.4px; }
+  .swiper-slide__text {
+    padding-bottom: 1rem; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
