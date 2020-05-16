@@ -387,7 +387,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  letter-spacing: 0.9px; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -691,24 +692,28 @@ img {
     background: transparent url("../img/close.svg") no-repeat center;
     border: none;
     margin: 12px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin: 2.428rem; }
+    margin: -0.364rem 2.428rem 1.828rem;
+    line-height: 1.5; }
   .modal__form {
     display: flex;
     flex-direction: column; }
   .modal__input {
-    margin-bottom: 3.428rem; }
+    margin-bottom: 3.228rem;
+    outline: none; }
     .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+      margin-bottom: 0.1rem; }
   .modal__policy {
-    margin-bottom: 1.42rem; }
+    margin-bottom: 2.72rem; }
   .modal__button {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 1.3rem 3.3rem; }
 
 .swiper-container {
   padding-bottom: 5.51rem; }
@@ -717,10 +722,10 @@ img {
 
 .swiper-slide {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: auto; }
   .swiper-slide img {
-    width: 48.5rem;
-    height: 34.43rem;
+    width: 90.2%;
     -o-object-fit: cover;
     object-fit: cover; }
   .swiper-slide__value {
@@ -732,7 +737,7 @@ img {
     flex-basis: 50%;
     margin-bottom: 0;
     padding-bottom: 1.5rem;
-    margin-right: -3.46rem; }
+    margin-right: -3.66rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
