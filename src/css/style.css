@@ -331,12 +331,19 @@ template {
 .col-30 {
   flex-basis: 33%; }
 
+.col-33 {
+  width: 33%; }
+
 .col-40 {
   width: 40%;
   margin-right: 3.93rem; }
 
 .col-60 {
   width: 60%;
+  margin-top: 22.2px; }
+
+.col-66 {
+  width: 66%;
   margin-top: 22.2px; }
 
 .button {
@@ -745,6 +752,8 @@ img {
     color: #E3B873;
     text-transform: uppercase;
     margin-bottom: 0.34rem; }
+    .swiper-slide__heading--light {
+      color: #ffffff; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
@@ -777,6 +786,28 @@ img {
 
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px; }
+
+.steps {
+  display: flex;
+  flex-wrap: wrap; }
+
+.step {
+  flex-basis: 33%;
+  margin-bottom: 2rem; }
+  .step__num, .step__name {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+    font-size: 1.071rem; }
+  .step__num {
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: 0.2rem; }
+    .step__num::after {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background-color: #E3B873;
+      display: block; }
 
 @media screen and (max-width: 1340px) {
   html {

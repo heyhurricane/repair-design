@@ -1,0 +1,23 @@
+.steps
+  display: flex
+  flex-wrap: wrap
+
+.step
+  flex-basis: 33%
+  margin-bottom: 2rem
+  &__num, &__name
+    text-decoration: none
+    display: block
+    color: $light
+    font-size: 1.071rem
+  &__num
+    font-family: 'Yeseva One', cursive
+    margin-bottom: 0.2rem
+    // display: flex
+    // align-items: center
+    &::after
+      content: ''
+      width: 16px
+      height: 1px
+      background-color: $primary
+      display: block

@@ -45,7 +45,21 @@ $(document).ready(function () {
     spaceBetween: 40,
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
+      type: 'bullets', 
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
+  var mySwiper2 = new Swiper ('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 40,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets', 
     },
     navigation: {
       nextEl: '.swiper-button-next',
