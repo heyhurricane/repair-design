@@ -350,17 +350,11 @@ template {
     background-color: #E3B873;
     color: #ffffff;
     font-family: 'Futura Demi', sans-serif;
-    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-    transition: box-shadow 0.3s; }
-    .button--primary:hover {
-      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.6); }
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
   .button--outline {
     border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff;
-    transition: box-shadow 0.3s; }
-    .button--outline:hover {
-      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.6); }
+    color: #ffffff; }
 
 .label {
   font-size: 1.07rem; }
@@ -497,26 +491,17 @@ img {
   margin-right: 20px; }
   .logo__link {
     text-decoration: none;
-    color: #E3B873;
-    transition: color 0.3s; }
-    .logo__link:hover {
-      color: #ffffff; }
+    color: #E3B873; }
 
 .nav__item {
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
   margin-right: 2.62rem; }
-  .nav__item:hover {
-    color: #E3B873;
-    transition: color 0.2s; }
 
 .phone {
   color: #E3B873;
-  font-family: 'Futura Demi', sans-serif;
-  transition: color 0.3s; }
-  .phone:hover {
-    color: #ffffff; }
+  font-family: 'Futura Demi', sans-serif; }
 
 .contacts__phone {
   margin-right: 44px; }
@@ -564,7 +549,8 @@ img {
   .hero__content {
     position: relative;
     max-width: 47.857rem;
-    margin-left: 5.71rem; }
+    margin-left: 3.91rem;
+    margin-bottom: 4.4rem; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -585,10 +571,7 @@ img {
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
     letter-spacing: 0.1px; }
-    .hero__scroll-down:hover {
-      color: #E3B873; }
     .hero__scroll-down::after {
       content: '';
       background: url("../img/arrow-down.svg") no-repeat center;
@@ -611,10 +594,7 @@ img {
     color: #E3B873;
     text-decoration: none;
     transform: rotate(90deg);
-    line-height: 0.8;
-    transition: color 0.3s; }
-    .instagram__link:hover {
-      color: #ffffff; }
+    line-height: 0.8; }
     .instagram__link::after {
       content: '';
       width: 52px;
@@ -752,17 +732,18 @@ img {
     flex-basis: 50%;
     margin-bottom: 0;
     padding-bottom: 1.5rem;
-    margin-right: -4.26rem; }
+    margin-right: -3.46rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     color: #E3B873;
     text-transform: uppercase;
-    margin-bottom: 0.44rem; }
+    margin-bottom: 0.34rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
   width: 9px;
   height: 9px; }
   .swiper-pagination-bullet-active {
@@ -792,11 +773,15 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px; }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1340px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .swiper-slide__text {
+    margin-right: -1.35rem; }
+  .hero__content {
+    margin-left: 5.71rem; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -819,7 +804,9 @@ img {
   .col-40, .col-60 {
     width: 100%;
     margin: 0;
-    margin-bottom: 2.86rem; } }
+    margin-bottom: 2.86rem; }
+  .swiper-slide__text {
+    margin-right: -4.26rem; } }
 
 @media screen and (max-width: 576px) {
   .section {
@@ -918,3 +905,32 @@ img {
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (min-width: 992px) {
+  .button--primary {
+    transition: box-shadow 0.3s; }
+    .button--primary:hover {
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.6); }
+  .button--outline {
+    transition: box-shadow 0.3s; }
+    .button--outline:hover {
+      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.6); }
+  .hero__scroll-down {
+    transition: color 0.3s; }
+    .hero__scroll-down:hover {
+      color: #E3B873; }
+  .instagram__link {
+    transition: color 0.3s; }
+    .instagram__link:hover {
+      color: #ffffff; }
+  .logo__link {
+    transition: color 0.3s; }
+    .logo__link:hover {
+      color: #ffffff; }
+  .phone {
+    transition: color 0.3s; }
+    .phone:hover {
+      color: #ffffff; }
+  .nav__item:hover {
+    color: #E3B873;
+    transition: color 0.2s; } }

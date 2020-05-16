@@ -1,9 +1,16 @@
-@media screen and ( max-width: 1300px )
+@media screen and ( max-width: 1340px )
   html
     font-size: 12px
   .nav
     &__item
       margin-right: 1rem
+  .swiper
+    &-slide
+      &__text
+        margin-right: -1.35rem
+  .hero
+    &__content
+      margin-left: 5.71rem
 
 @media screen and ( max-width: 992px )
   .nav
@@ -32,6 +39,10 @@
       width: 100%
       margin: 0
       margin-bottom: 2.86rem
+  .swiper
+    &-slide
+      &__text
+        margin-right: -4.26rem
 
 @media screen and ( max-width: 576px )
   
@@ -92,6 +103,7 @@
     &--primary
       letter-spacing: -0.2px
   .hero
+    // height: 65.8vh
     display: block
     margin-top: 3.5rem
     &__content
@@ -148,3 +160,37 @@
   // .container
   //   width: 70%
 
+@media screen and ( min-width: 992px )
+  .button
+    &--primary
+      transition: box-shadow 0.3s
+      &:hover
+        box-shadow: 0px 5px 15px rgba($primary, 0.6)
+    &--outline
+      transition: box-shadow 0.3s
+      &:hover
+        box-shadow: 0px 5px 15px rgba($light, 0.6)
+  .hero
+    &__scroll-down
+      transition: color 0.3s
+      &:hover
+        color: $primary
+  .instagram
+    &__link    
+      transition: color 0.3s
+      &:hover
+        color: $light
+  .logo
+    &__link
+      transition: color 0.3s
+      &:hover
+        color: $light
+  .phone
+    transition: color 0.3s
+    &:hover
+      color: $light
+  .nav
+    &__item
+      &:hover
+        color: $primary
+        transition: color 0.2s
