@@ -60,7 +60,14 @@ $(document).ready(function () {
   bullets.css('left', prev.width()+18);
   next.css('left', prev.width()+18+bullets.width()+18);
 
-  
+  $(function(){
+
+    $('.scroll-down').on('click', function(e){
+      $('html,body').stop().animate({ scrollTop: $('#project').offset().top }, 900);
+      e.preventDefault();
+    });
+    
+  });
 
 
 });
