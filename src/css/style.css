@@ -908,7 +908,16 @@ img {
     height: 16.73rem; } }
 
 @media screen and (max-height: 520px) {
-  .hero__scroll-down {
+  .hero {
+    height: auto;
+    padding-bottom: 4.1rem; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      margin-bottom: 0; }
+    .hero__button {
+      margin-bottom: 0; }
+  ::after {
     display: none; }
   .modal__dialog {
     height: 80%;

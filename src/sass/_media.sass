@@ -152,8 +152,16 @@
 
 @media screen and ( max-height: 520px )
   .hero
+    height: auto
+    padding-bottom: 4.1rem
     &__scroll-down
       display: none
+    &__content
+      margin-bottom: 0
+    &__button
+      margin-bottom: 0
+  &::after
+    display: none
   .modal
     &__dialog
       height: 80%
