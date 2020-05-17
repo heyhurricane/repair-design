@@ -344,7 +344,8 @@ template {
 
 .col-66 {
   width: 66%;
-  margin-top: 22.2px; }
+  margin-top: 7.6rem;
+  margin-left: 4.5rem; }
 
 .button {
   padding: 12px 20px;
@@ -445,7 +446,7 @@ img {
       line-height: 1.5; }
       .section-title__heading--primary {
         color: #E3B873;
-        font-size: 1.77rem;
+        font-size: 1.86rem;
         margin-bottom: 22.4px; }
     .section-title__word {
       display: flex;
@@ -456,6 +457,23 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin-left: 2rem; }
+      .section-title__word--step {
+        display: flex;
+        align-items: center;
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 2rem; }
+    .section-title__word2 {
+      display: flex;
+      align-items: center; }
+      .section-title__word2::after {
+        content: '';
+        width: 90px;
+        height: 2px;
+        background-color: #E3B873;
+        margin-left: 6.6rem; }
     .section-title__text {
       text-transform: none;
       font-family: 'Futura Book', sans-serif;
@@ -479,7 +497,8 @@ img {
         background-color: #E3B873; }
     .section-title__about {
       font-family: 'Futura Demi', sans-serif;
-      font-size: 1.071rem; }
+      font-size: 1.071rem;
+      margin-bottom: -0.3rem; }
 
 .header {
   position: fixed;
@@ -757,6 +776,8 @@ img {
     margin-bottom: 0.34rem; }
     .swiper-slide__heading--light {
       color: #ffffff; }
+    .swiper-slide__heading--step {
+      font-size: 1.07rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
@@ -790,13 +811,22 @@ img {
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px; }
 
+.stepswipe-container {
+  padding: 3rem 0rem 8.4rem; }
+  .stepswipe-container--photo {
+    padding-top: 0.9rem; }
+
+.stepswipe-slide img {
+  width: 92.5%;
+  height: 74.3%; }
+
 .steps {
   display: flex;
   flex-wrap: wrap; }
 
 .step {
   flex-basis: 33%;
-  margin-bottom: 2rem;
+  margin-bottom: 3.8rem;
   opacity: 0.3; }
   .step--active {
     opacity: 1; }
@@ -834,6 +864,8 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 890px) {
+  .steps {
+    display: none; }
   .row {
     flex-direction: column;
     align-items: center; }

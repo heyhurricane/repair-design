@@ -30,8 +30,8 @@ img
       line-height: 1.5
       &--primary
         color: $primary
-        font-size: 1.77rem
-        margin-bottom: 22.4px;
+        font-size: 1.86rem
+        margin-bottom: 22.4px
     &__word
       display: flex
       align-items: center
@@ -41,6 +41,24 @@ img
         height: 2px
         background-color: $primary
         margin-left: 2rem
+      &--step
+        display: flex
+        align-items: center
+        &::after
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
+    &__word2
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 6.6rem
     &__text
       text-transform: none
       font-family: 'Futura Book', sans-serif
@@ -65,3 +83,4 @@ img
     &__about
       font-family: 'Futura Demi', sans-serif
       font-size: 1.071rem
+      margin-bottom: -0.3rem
