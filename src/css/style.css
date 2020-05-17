@@ -800,7 +800,10 @@ img {
 
 .step {
   flex-basis: 33%;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  opacity: 0.3; }
+  .step--active {
+    opacity: 1; }
   .step__num, .step__name {
     text-decoration: none;
     display: block;

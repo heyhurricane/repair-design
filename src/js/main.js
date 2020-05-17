@@ -1,5 +1,9 @@
 $(document).ready(function () {
   var modalActive = false;
+  var stepBtn = $('.swiper-menu__item').first();;
+  stepBtn.toggleClass('step--active');
+  
+
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn =  $('.modal__close');
@@ -52,11 +56,34 @@ $(document).ready(function () {
     },
   });
 
+  $('.swiper-button-prev').on('click', function() {
+    console.log(mySwiper[3].realIndex);
+    stepBtn.toggleClass('step--active');
+    const index = mySwiper[3].realIndex;
+    stepBtn = $('.swiper-menu__item').slice(index, index+1);
+    console.log(stepBtn);
+    stepBtn.toggleClass('step--active');
+
+  });
+
+  $('.swiper-button-next').on('click', function() {
+    console.log(mySwiper[3].realIndex);
+    stepBtn.toggleClass('step--active');
+    const index = mySwiper[3].realIndex;
+    stepBtn = $('.swiper-menu__item').slice(index, index+1);
+    console.log(stepBtn);
+    stepBtn.toggleClass('step--active');
+
+  });
   $('.swiper-menu').on('click',  '.swiper-menu__item', function() {
+    // console.log(stepBtn);
+    stepBtn.toggleClass('step--active');
     const index = $(this).data('index');
-    console.log(mySwiper[3]);
     mySwiper[2].slideTo(index);
     mySwiper[3].slideTo(index);
+    stepBtn = $(this);
+    console.log($(this));
+    stepBtn.toggleClass('step--active');
  });
 
   var next = $('.swiper-button-next');
