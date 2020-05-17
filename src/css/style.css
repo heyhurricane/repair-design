@@ -477,6 +477,9 @@ img {
         height: 2px;
         margin: 0 10px;
         background-color: #E3B873; }
+    .section-title__about {
+      font-family: 'Futura Demi', sans-serif;
+      font-size: 1.071rem; }
 
 .header {
   position: fixed;
@@ -745,6 +748,8 @@ img {
     margin-bottom: 0;
     padding-bottom: 1.5rem;
     margin-right: -3.66rem; }
+    .swiper-slide__text--step {
+      flex-basis: 85%; }
   .swiper-slide__heading {
     font-size: 1.285rem;
     line-height: 1.78rem;
@@ -754,6 +759,8 @@ img {
     margin-bottom: 0.34rem; }
     .swiper-slide__heading--light {
       color: #ffffff; }
+    .swiper-slide__heading--step {
+      font-size: 1.071rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);

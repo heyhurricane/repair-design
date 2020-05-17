@@ -41,7 +41,6 @@ $(document).ready(function () {
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
     loop: true,
-    // width: '100%',
     spaceBetween: 40,
     pagination: {
       el: '.swiper-pagination',
@@ -53,19 +52,12 @@ $(document).ready(function () {
     },
   });
 
-  var mySwiper2 = new Swiper ('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    spaceBetween: 40,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets', 
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  $('.swiper-menu').on('click',  '.swiper-menu__item', function() {
+    const index = $(this).data('index');
+    console.log(mySwiper[3]);
+    mySwiper[2].slideTo(index);
+    mySwiper[3].slideTo(index);
+ });
 
   var next = $('.swiper-button-next');
   var prev = $('.swiper-button-prev');
