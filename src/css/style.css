@@ -332,7 +332,7 @@ template {
   flex-basis: 33%; }
 
 .col-33 {
-  width: 33%; }
+  width: 36%; }
 
 .col-40 {
   width: 40%;
@@ -343,9 +343,9 @@ template {
   margin-top: 22.2px; }
 
 .col-66 {
-  width: 66%;
+  width: 64%;
   margin-top: 7.6rem;
-  margin-left: 4.5rem; }
+  margin-left: 1.6rem; }
 
 .button {
   padding: 12px 20px;
@@ -760,6 +760,11 @@ img {
   .swiper-slide__value {
     line-height: 1.4;
     font-size: 14.9px; }
+    .swiper-slide__value--step {
+      line-height: 1.65;
+      font-size: 15.3px;
+      max-width: 24.2rem;
+      letter-spacing: -0.1px; }
   .swiper-slide-active {
     width: 100%; }
   .swiper-slide__text {
@@ -777,7 +782,8 @@ img {
     .swiper-slide__heading--light {
       color: #ffffff; }
     .swiper-slide__heading--step {
-      font-size: 1.07rem; }
+      font-size: 1.07rem;
+      margin-bottom: -0.5rem; }
 
 .swiper-pagination-bullet {
   background-color: rgba(255, 255, 255, 0.3);
@@ -817,8 +823,8 @@ img {
     padding-top: 0.9rem; }
 
 .stepswipe-slide img {
-  width: 92.5%;
-  height: 74.3%; }
+  width: 95.3%;
+  height: 72.3%; }
 
 .steps {
   display: flex;
@@ -861,11 +867,11 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .steps {
+    display: none; } }
 
 @media screen and (max-width: 890px) {
-  .steps {
-    display: none; }
   .row {
     flex-direction: column;
     align-items: center; }
