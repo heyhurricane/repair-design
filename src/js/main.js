@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var modalActive = false;
-  var stepBtn = $('.swiper-menu__item').first();;
+  var stepBtn = $('.swiper-menu__item').first();
   stepBtn.toggleClass('step--active');
   
 
@@ -42,34 +42,48 @@ $(document).ready(function () {
       return false;
   });
 
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.stepswipe-container', {
     // Optional parameters
     loop: true,
     spaceBetween: 40,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.stepswipe-pagination',
       type: 'bullets', 
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.stepswipe-button-next',
+      prevEl: '.stepswipe-button-prev',
     },
   });
 
-  $('.swiper-button-prev').on('click', function() {
-    console.log(mySwiper[3].realIndex);
+  var mySwiper2 = new Swiper ('.projectswipe-container', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 40,
+    pagination: {
+      el: '.projectswipe-pagination',
+      type: 'bullets', 
+    },
+    navigation: {
+      nextEl: '.projectswipe-button-next',
+      prevEl: '.projectswipe-button-prev',
+    },
+  });
+
+  $('.stepswipe-button-prev').on('click', function() {
+    console.log(mySwiper[0].realIndex);
     stepBtn.toggleClass('step--active');
-    const index = mySwiper[3].realIndex;
+    const index = mySwiper[0].realIndex;
     stepBtn = $('.swiper-menu__item').slice(index, index+1);
     console.log(stepBtn);
     stepBtn.toggleClass('step--active');
 
   });
 
-  $('.swiper-button-next').on('click', function() {
-    console.log(mySwiper[3].realIndex);
+  $('.stepswipe-button-next').on('click', function() {
+    console.log(mySwiper[0].realIndex);
     stepBtn.toggleClass('step--active');
-    const index = mySwiper[3].realIndex;
+    const index = mySwiper[0].realIndex;
     stepBtn = $('.swiper-menu__item').slice(index, index+1);
     console.log(stepBtn);
     stepBtn.toggleClass('step--active');
@@ -79,19 +93,24 @@ $(document).ready(function () {
     // console.log(stepBtn);
     stepBtn.toggleClass('step--active');
     const index = $(this).data('index');
-    mySwiper[2].slideTo(index);
-    mySwiper[3].slideTo(index);
+    mySwiper[0].slideTo(index);
+    mySwiper[1].slideTo(index);
     stepBtn = $(this);
     console.log($(this));
     stepBtn.toggleClass('step--active');
  });
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+  var next = $('.projectswipe-button-next');
+  var prev = $('.projectswipe-button-prev');
+  var next2 = $('.stepswipe-button-next');
+  var prev2 = $('.stepswipe-button-prev');
+  var bullets = $('.projectswipe-pagination');
+  var bullets2 = $('.stepswipe-pagination');
 
   bullets.css('left', prev.width()+18);
+  bullets2.css('left', prev2.width()+18);
   next.css('left', prev.width()+18+bullets.width()+18);
+  next2.css('left', prev2.width()+18+bullets2.width()+18);
 
   $(function(){
 
