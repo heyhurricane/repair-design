@@ -386,16 +386,18 @@ template {
     color: #ffffff; }
   .input::placeholder {
     color: #ffffff; }
-  .input--dark::-webkit-input-placeholder {
+  .input--dark {
     color: #131313; }
-  .input--dark::-moz-placeholder {
-    color: #131313; }
-  .input--dark:-ms-input-placeholder {
-    color: #131313; }
-  .input--dark::-ms-input-placeholder {
-    color: #131313; }
-  .input--dark::placeholder {
-    color: #131313; }
+    .input--dark::-webkit-input-placeholder {
+      color: #131313; }
+    .input--dark::-moz-placeholder {
+      color: #131313; }
+    .input--dark:-ms-input-placeholder {
+      color: #131313; }
+    .input--dark::-ms-input-placeholder {
+      color: #131313; }
+    .input--dark::placeholder {
+      color: #131313; }
 
 .policy__checkbox {
   opacity: 0;
