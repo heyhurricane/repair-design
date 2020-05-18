@@ -872,6 +872,12 @@ img {
   .hero__content {
     margin-left: 5.71rem; } }
 
+@media screen and (max-width: 1097px) {
+  .step .stepsecond {
+    margin-left: 4rem; }
+  .step .stepthird {
+    margin-left: 7rem; } }
+
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
