@@ -53,6 +53,58 @@
       &__text
         margin-right: -4.26rem
 
+@media screen and ( max-width: 650px)
+  .projects
+    padding-bottom: 2rem
+  .control
+    padding-bottom: 1rem
+    color: $light
+    background: $dark
+    &__section-title 
+      margin-top: 0
+      color: $light
+      margin-bottom: 3rem
+    &__form
+      flex-direction: column
+    &__button
+      order: 5
+    &__text
+      font-size: 1.164rem
+      line-height: 2rem
+      margin-bottom: 2.485rem
+      &::before
+        margin-bottom: 1.4rem
+    &__input-group
+        flex-basis: 100%
+        margin-bottom: 5.7rem
+    &__policy 
+      margin-top: -4.45rem
+      margin-bottom: 5.1rem
+      &-label
+        justify-content: flex-start
+        font-size: 1.17rem
+    &__button 
+      padding: 16.9px 62.8px
+      font-size: 1.23rem
+      margin-bottom: -3rem
+    &__video
+      background-size: cover
+  .video
+    &__play
+      width: 20%
+  .input
+    &--dark
+      font-size: 1.386rem
+      letter-spacing: 0.5px
+      padding: 2.5px 0
+      &::placeholder
+        color: $light
+  .label
+    &--dark
+      color: rgba($light, 0.6)
+      font-size: 1.1rem
+      letter-spacing: 0.6px
+      
 @media screen and ( max-width: 576px )
   .section
     padding: 0
@@ -63,7 +115,7 @@
           display: none
       &__heading        
         font-size: 1.83rem
-        // margin-bottom: 17.8px
+        margin-bottom: 1.5rem
         &dark
           color: $light
         &--primary
@@ -80,6 +132,7 @@
           margin-bottom: 1.87rem
           padding-right: 40px
   .types
+    padding-top: 5rem
     &__section-title 
       margin-bottom: 3.4rem
   .card
@@ -158,48 +211,16 @@
         height: 16.73rem
   .control
     padding-top: 0.1px
-    padding-bottom: 1rem
-    color: $light
-    background: $dark
-    &__section-title 
-      margin-top: 0
-      color: $light
-      margin-bottom: 3rem
-    &__form
-      flex-direction: column
-    &__button
-      order: 5
     &__video
       margin-bottom: 2.228rem
-      max-width: 28rem
-      min-height: 17.2rem
-    &__text
-      font-size: 1.164rem
-      line-height: 2rem
-      margin-bottom: 2.485rem
-      &::before
-        margin-bottom: 1.1rem 
-    &__input-group
-        flex-basis: 100%
-        margin-bottom: 5.5rem
-    &__policy 
-      margin-top: -4.45rem
-      margin-bottom: 5.1rem
-      &-label
-        justify-content: flex-start
-    &__button 
-      padding: 16.9px 62.8px
-      font-size: 1.23rem
-  .video
-    &__play
-      width: 20%
-  .input
-    &--dark
-      &::placeholder
-        color: $light
-  .label
-    &--dark
-      color: rgba($light, 0.6)
+      max-width: 100%
+      min-height: 17.5rem
+    &__section-title 
+      color: $light
+    &__button
+      min-width: 100%
+      margin-bottom: -2rem
+      
 
 
 
@@ -213,8 +234,8 @@
       margin-bottom: 0
     &__button
       margin-bottom: 0
-  &::after
-    display: none
+    &::after
+      display: none
   .modal
     &__dialog
       height: 80%
