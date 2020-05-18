@@ -54,7 +54,6 @@
         margin-right: -4.26rem
 
 @media screen and ( max-width: 576px )
-  
   .section
     padding: 0
     &-title
@@ -64,6 +63,7 @@
           display: none
       &__heading        
         font-size: 1.83rem
+        // margin-bottom: 17.8px
         &dark
           color: $light
         &--primary
@@ -156,6 +156,50 @@
       img
         width: 28.086rem
         height: 16.73rem
+  .control
+    padding-top: 0.1px
+    padding-bottom: 1rem
+    color: $light
+    background: $dark
+    &__section-title 
+      margin-top: 0
+      color: $light
+      margin-bottom: 3rem
+    &__form
+      flex-direction: column
+    &__button
+      order: 5
+    &__video
+      margin-bottom: 2.228rem
+      max-width: 28rem
+      min-height: 17.2rem
+    &__text
+      font-size: 1.164rem
+      line-height: 2rem
+      margin-bottom: 2.485rem
+      &::before
+        margin-bottom: 1.1rem 
+    &__input-group
+        flex-basis: 100%
+        margin-bottom: 5.5rem
+    &__policy 
+      margin-top: -4.45rem
+      margin-bottom: 5.1rem
+      &-label
+        justify-content: flex-start
+    &__button 
+      padding: 16.9px 62.8px
+      font-size: 1.23rem
+  .video
+    &__play
+      width: 20%
+  .input
+    &--dark
+      &::placeholder
+        color: $light
+  .label
+    &--dark
+      color: rgba($light, 0.6)
 
 
 
