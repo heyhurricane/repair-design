@@ -447,6 +447,11 @@ img {
       .section-title__heading--primary {
         color: #E3B873;
         font-size: 1.86rem;
+        margin-bottom: 22.4px;
+        letter-spacing: -0.9px; }
+      .section-title__heading--stepping {
+        color: #E3B873;
+        font-size: 1.86rem;
         margin-bottom: 22.4px; }
     .section-title__word {
       display: flex;
@@ -764,7 +769,8 @@ img {
       line-height: 1.65;
       font-size: 15.3px;
       max-width: 24.2rem;
-      letter-spacing: -0.1px; }
+      letter-spacing: -0.1px;
+      margin-bottom: -0.3rem; }
   .swiper-slide-active {
     width: 100%; }
   .swiper-slide__text {
@@ -818,9 +824,10 @@ img {
   margin: 0 10px; }
 
 .stepswipe-container {
-  padding: 3rem 0rem 8.4rem; }
+  padding: 3rem 0rem 6.6rem; }
   .stepswipe-container--photo {
-    padding-top: 0.9rem; }
+    padding-top: 0.9rem;
+    padding-bottom: 0; }
 
 .stepswipe-slide img {
   width: 95.3%;
@@ -832,8 +839,12 @@ img {
 
 .step {
   flex-basis: 33%;
-  margin-bottom: 3.8rem;
+  margin-bottom: 3.1rem;
   opacity: 0.3; }
+  .step .stepsecond {
+    margin-left: 4.4rem; }
+  .step .stepthird {
+    margin-left: 9.5rem; }
   .step--active {
     opacity: 1; }
   .step__num, .step__name {
@@ -843,7 +854,7 @@ img {
     font-size: 1.071rem; }
   .step__num {
     font-family: 'Yeseva One', cursive;
-    margin-bottom: 0.2rem; }
+    margin-bottom: 0.7rem; }
     .step__num::after {
       content: '';
       width: 16px;
@@ -868,7 +879,7 @@ img {
     display: none; }
   .hero__content {
     margin-left: 0; }
-  .steps {
+  .sixsteps {
     display: none; } }
 
 @media screen and (max-width: 890px) {

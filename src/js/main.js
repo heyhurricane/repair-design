@@ -3,7 +3,7 @@ $(document).ready(function () {
   var stepBtn = $('.swiper-menu__item').first();
   stepBtn.toggleClass('step--active');
   
-
+  // Модальное окно
   var modal = $('.modal'),
       modalBtn = $('[data-toggle=modal]'),
       closeBtn =  $('.modal__close');
@@ -28,6 +28,7 @@ $(document).ready(function () {
     }
   });
 
+  // Кнопка Наверх
   $(window).scroll(function () {
       if ($(this).scrollTop() > 0) {
           $('.scroll-up').fadeIn();
@@ -42,6 +43,7 @@ $(document).ready(function () {
       return false;
   });
 
+  // Слайдер в секции 6 Шагов
   var mySwiper = new Swiper ('.stepswipe-container', {
     // Optional parameters
     loop: true,
@@ -56,6 +58,7 @@ $(document).ready(function () {
     },
   });
 
+  // Слайдер в секции Проекты
   var mySwiper2 = new Swiper ('.projectswipe-container', {
     // Optional parameters
     loop: true,
@@ -70,48 +73,46 @@ $(document).ready(function () {
     },
   });
 
+  // Кнопки вперёд/назад в слайдере в секции 6 Шагов
   $('.stepswipe-button-prev').on('click', function() {
-    console.log(mySwiper[0].realIndex);
     stepBtn.toggleClass('step--active');
     const index = mySwiper[0].realIndex;
     stepBtn = $('.swiper-menu__item').slice(index, index+1);
-    console.log(stepBtn);
     stepBtn.toggleClass('step--active');
 
   });
 
   $('.stepswipe-button-next').on('click', function() {
-    console.log(mySwiper[0].realIndex);
     stepBtn.toggleClass('step--active');
     const index = mySwiper[0].realIndex;
     stepBtn = $('.swiper-menu__item').slice(index, index+1);
-    console.log(stepBtn);
     stepBtn.toggleClass('step--active');
 
   });
+  // Переключение слайдов в секции 6 Шагов при нажатии на меню над слайдером
   $('.swiper-menu').on('click',  '.swiper-menu__item', function() {
-    // console.log(stepBtn);
     stepBtn.toggleClass('step--active');
     const index = $(this).data('index');
     mySwiper[0].slideTo(index);
     mySwiper[1].slideTo(index);
     stepBtn = $(this);
-    console.log($(this));
     stepBtn.toggleClass('step--active');
  });
 
+  //  Навигация и пагинация для слайдера в Проектах
   var next = $('.projectswipe-button-next');
   var prev = $('.projectswipe-button-prev');
+  var bullets = $('.projectswipe-pagination');
+  bullets.css('left', prev.width()+18);
+  next.css('left', prev.width()+18+bullets.width()+18);
+  //  Навигация и пагинация для слайдера в 6 Шагах
   var next2 = $('.stepswipe-button-next');
   var prev2 = $('.stepswipe-button-prev');
-  var bullets = $('.projectswipe-pagination');
   var bullets2 = $('.stepswipe-pagination');
-
-  bullets.css('left', prev.width()+18);
   bullets2.css('left', prev2.width()+18);
-  next.css('left', prev.width()+18+bullets.width()+18);
   next2.css('left', prev2.width()+18+bullets2.width()+18);
 
+  // Кнопка Листайте вниз
   $(function(){
 
     $('.scroll-down').on('click', function(e){

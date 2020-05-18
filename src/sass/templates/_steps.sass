@@ -1,8 +1,9 @@
 .stepswipe
   &-container
-    padding: 3rem 0rem 8.4rem
+    padding: 3rem 0rem 6.6rem
     &--photo
       padding-top: 0.9rem
+      padding-bottom: 0
   &-slide
     img
       width: 95.3%
@@ -13,10 +14,15 @@
 
 .step
   flex-basis: 33%
-  margin-bottom: 3.8rem
+  margin-bottom: 3.1rem
   // margin-right: 3.8rem
   opacity: 0.3
-
+  // display: flex
+  // flex-direction: column
+  .stepsecond
+    margin-left: 4.4rem
+  .stepthird
+    margin-left: 9.5rem
   &--active
     opacity: 1
   &__num, &__name
@@ -26,7 +32,7 @@
     font-size: 1.071rem
   &__num
     font-family: 'Yeseva One', cursive
-    margin-bottom: 0.2rem
+    margin-bottom: 0.7rem
     // display: flex
     // align-items: center
     &::after
