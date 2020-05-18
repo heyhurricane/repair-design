@@ -1023,20 +1023,22 @@ img {
       background-size: cover; }
   .video__play {
     width: 20%; }
-  .input--dark {
-    font-size: 1.386rem;
-    letter-spacing: 0.5px;
-    padding: 2.5px 0; }
-    .input--dark::-webkit-input-placeholder {
-      color: #ffffff; }
-    .input--dark::-moz-placeholder {
-      color: #ffffff; }
-    .input--dark:-ms-input-placeholder {
-      color: #ffffff; }
-    .input--dark::-ms-input-placeholder {
-      color: #ffffff; }
-    .input--dark::placeholder {
-      color: #ffffff; }
+  .input {
+    color: #ffffff; }
+    .input--dark {
+      font-size: 1.386rem;
+      letter-spacing: 0.5px;
+      padding: 2.5px 0; }
+      .input--dark::-webkit-input-placeholder {
+        color: #ffffff; }
+      .input--dark::-moz-placeholder {
+        color: #ffffff; }
+      .input--dark:-ms-input-placeholder {
+        color: #ffffff; }
+      .input--dark::-ms-input-placeholder {
+        color: #ffffff; }
+      .input--dark::placeholder {
+        color: #ffffff; }
   .label--dark {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1.1rem;
