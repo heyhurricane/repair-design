@@ -30,10 +30,15 @@
   .sixsteps
     display: none
   .footer
+    padding-bottom: 3rem
     &__menu
       display: none
 
 @media screen and ( max-width: 890px )
+  .footer
+    background-image: none
+    &__wrap
+      background-color: $dark
   .row
     flex-direction: column
     align-items: center
@@ -55,6 +60,9 @@
     &-slide
       &__text
         margin-right: -4.26rem
+  .scroll-up
+    color: $primary
+    border-color: $primary
 
 @media screen and ( max-width: 650px)
   .projects
@@ -113,10 +121,31 @@
       color: rgba($light, 0.6)
       font-size: 1.1rem
       letter-spacing: 0.6px
+  .footer
+    &__wrap
+      padding-left: 0
+      padding-right: 0
+    &__form
+      flex-direction: column
+    &__button
+      font-size: 1.2rem
+      padding: 1.4rem 10.9rem
+    &__title
+      font-size: 1.65rem
+      margin-bottom: 4.57rem
+    &__input-group 
+      margin-bottom: 5.48rem
+      &--full-width
+        margin-bottom: 0.7rem
+    &__policy
+      margin-bottom: 5.7rem
+  .policy 
+    &__label
+      &--center
+        justify-content: flex-start
+        font-size: 1.33rem
       
 @media screen and ( max-width: 576px )
-  body
-    background-color: $dark
   .section
     padding: 0
     &-title
@@ -231,34 +260,7 @@
     &__button
       min-width: 100%
       margin-bottom: -2rem
-  .footer
-    background-image: none
-    &__wrap
-      background-color: $dark
-      padding-left: 0
-      padding-right: 0
-    &__form
-      flex-direction: column
-    &__button
-      font-size: 1.2rem
-      padding: 1.4rem 10.9rem
-    &__title
-      font-size: 1.65rem
-      margin-bottom: 4.57rem
-    &__input-group 
-      margin-bottom: 5.48rem
-      &--full-width
-        margin-bottom: 0.7rem
-    &__policy
-      margin-bottom: 5.7rem
-  .policy 
-    &__label
-      &--center
-        justify-content: flex-start
-        font-size: 1.33rem
-  .scroll-up
-    color: $primary
-    border-color: $primary
+ 
 
 
 
