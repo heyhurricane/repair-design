@@ -186,32 +186,32 @@ $(document).ready(function () {
     },
     rules: {
       // simple rule, converted to {required:true}
-      userName: {
+      username: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: {
+      userphone: {
         required: true,
         minlength: 17,
         maxlength: 17
       },
       userQuestion: "required",
-      userСheck: "required"
+      usercheck: "required"
     },
     messages: {
-      userName: {
+      username: {
         required: "Имя обязательно",
         minlength: 'Имя не короче 2 символов',
         maxlength: 'Имя не длиннее 15 символов'
       },
-      userPhone: {
+      userphone: {
         required: "Телефон обязателен",
         minlength: 'Телефон должен содержать 10 символов',
         maxlength: 'Телефон должен содержать 10 символов'
       },
       userQuestion: "Если Вы хотите задать вопрос, обязательно его введите",
-      userСheck: "Согласие с обработкой данных обязательно"
+      usercheck: "Согласие с обработкой данных обязательно"
     },
     // errorPlacement: function (error, element) {
     //   var name = $(element).attr("userName");
