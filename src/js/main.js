@@ -128,6 +128,14 @@ $(document).ready(function () {
 
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement : 'div',
+    ignore: ':hidden:not(:checkbox)',
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -135,12 +143,17 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 17
+      },
       // compound rule
       userEmail: {
         required: true,
         email: true
-      }
+      },
+      userСheck: "required"
     },
     messages: {
       userName: {
@@ -148,16 +161,29 @@ $(document).ready(function () {
         minlength: 'Имя не короче 2 символов',
         maxlength: 'Имя не длиннее 15 символов'
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: 'Телефон должен содержать 10 символов',
+        maxlength: 'Телефон должен содержать 10 символов'
+      },
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формте: name@domain.com"
-      }
+      },
+      userСheck: "Согласие с обработкой данных обязательно"
     }
   });
 
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorElement : 'div',
+    ignore: ':hidden:not(:checkbox)',
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -165,8 +191,13 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-      userQuestion: "required"
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 17
+      },
+      userQuestion: "required",
+      userСheck: "required"
     },
     messages: {
       userName: {
@@ -174,13 +205,32 @@ $(document).ready(function () {
         minlength: 'Имя не короче 2 символов',
         maxlength: 'Имя не длиннее 15 символов'
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: 'Телефон должен содержать 10 символов',
+        maxlength: 'Телефон должен содержать 10 символов'
+      },
       userQuestion: "Если Вы хотите задать вопрос, обязательно его введите",
-    }
+      userСheck: "Согласие с обработкой данных обязательно"
+    },
+    // errorPlacement: function (error, element) {
+    //   var name = $(element).attr("userName");
+    //   error.appendTo($("#" + name + "_validate"));
+    // },
+    
+    
   });
 
   $('.control__form').validate({
     errorClass: "invalid",
+    errorElement : 'div',
+    ignore: ':hidden:not(:checkbox)',
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+      error.insertAfter($(element));
+    },
     rules: {
       // simple rule, converted to {required:true}
       userName: {
@@ -188,7 +238,12 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required"
+      userPhone: {
+        required: true,
+        minlength: 17,
+        maxlength: 17
+      },
+      userСheck: "required"
     },
     messages: {
       userName: {
@@ -196,10 +251,15 @@ $(document).ready(function () {
         minlength: 'Имя не короче 2 символов',
         maxlength: 'Имя не длиннее 15 символов'
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Телефон обязателен",
+        minlength: 'Телефон должен содержать 10 символов',
+        maxlength: 'Телефон должен содержать 10 символов'
+      },
+      userСheck: "Согласие с обработкой данных обязательно"
     }
   });
   // Маска для телефона
-  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
 });

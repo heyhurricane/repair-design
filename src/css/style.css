@@ -410,6 +410,8 @@ template {
   display: flex;
   align-items: center;
   font-size: 1.143rem; }
+  .policy__label div.invalid {
+    margin-top: 2rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -429,7 +431,9 @@ template {
   color: #E3B873;
   cursor: pointer; }
 
-label.invalid {
+div.invalid {
+  margin-top: 3.8rem;
+  position: absolute;
   color: tomato; }
 
 input.invalid {
@@ -801,7 +805,7 @@ img {
     position: relative;
     max-width: 36.36rem;
     background: #131313 url("../img/bg-lines.svg") no-repeat center;
-    padding: 2.357rem 3.5rem 1.928rem;
+    padding: 1.657rem 3.5rem 1.928rem;
     color: #ffffff; }
   .modal__close {
     position: absolute;
@@ -819,7 +823,7 @@ img {
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin: -0.364rem 2.428rem 1.828rem;
+    margin: 0.436rem 2.428rem 1.828rem;
     line-height: 1.5; }
   .modal__form {
     display: flex;
@@ -827,9 +831,9 @@ img {
   .modal__input-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.228rem; }
-  .modal__input:last-of-type {
-    margin-bottom: 0.1rem; }
+    margin-bottom: 3.528rem; }
+    .modal__input-group--last {
+      margin-bottom: 0.1rem; }
   .modal__policy {
     margin-bottom: 2.72rem; }
   .modal__button {

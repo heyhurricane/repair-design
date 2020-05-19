@@ -48,6 +48,9 @@
     display: flex
     align-items: center
     font-size: 1.143rem
+    div
+      &.invalid
+        margin-top: 2rem
     &::before
       content: ''
       width: 18px
@@ -68,10 +71,15 @@
   cursor: pointer
   display:none
 
-label
+div
   &.invalid
+    margin-top: 3.8rem
+    position: absolute
     color: tomato
+      
 
 input
   &.invalid
     border-bottom: 1px solid tomato
+    // &:nth-child(3)
+    
