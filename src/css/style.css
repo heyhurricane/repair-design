@@ -432,6 +432,9 @@ template {
 label.invalid {
   color: tomato; }
 
+input.invalid {
+  border-bottom: 1px solid tomato; }
+
 *, *:before, *:after {
   box-sizing: border-box;
   outline: none; }
