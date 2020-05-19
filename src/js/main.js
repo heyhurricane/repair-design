@@ -28,13 +28,23 @@ $(document).ready(function () {
     }
   });
 
-  // Кнопка Наверх
+  // Кнопка Наверх и Анимация
   $(window).scroll(function () {
+    var windowHeight = $(window).height();
       if ($(this).scrollTop() > 0) {
           $('.scroll-up').fadeIn();
       } else {
           $('.scroll-up').fadeOut();
       }
+      $('.footer__title').each(function() {
+        var self = $(this),
+        height = self.offset().top + self.height();
+        console.log(height);
+        if ($(document).scrollTop() + windowHeight >= height) {
+          self.addClass('animated');
+        }
+      });
+
   });
   $('.scroll-up').click(function () {
       $('body,html').animate({
@@ -124,7 +134,7 @@ $(document).ready(function () {
 
   new WOW().init();
 
-  // Валидация форм
+    // Валидация форм
 
   $('.modal__form').validate({
     errorClass: "invalid",
