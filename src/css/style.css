@@ -973,6 +973,39 @@ img {
       background-color: #E3B873;
       display: block; }
 
+.team__person {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  margin-top: -5rem;
+  background-color: #ffffff;
+  max-width: 16.64rem; }
+
+.team__about {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  font-size: 1.286rem;
+  padding: 1.64rem 1.43rem; }
+
+.team__name {
+  font-family: 'Yeseva One', cursive;
+  line-height: 25px; }
+
+.team__position {
+  color: #959595; }
+
+.team__experience {
+  font-size: 0.93rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #E3B873;
+  padding: 1rem 0; }
+
+.team__card {
+  margin-bottom: 10rem; }
+
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }

@@ -39,7 +39,6 @@ $(document).ready(function () {
       $('.footer__title').each(function() {
         var self = $(this),
         height = self.offset().top + self.height();
-        console.log(height);
         if ($(document).scrollTop() + windowHeight >= height) {
           self.addClass('animated');
         }
