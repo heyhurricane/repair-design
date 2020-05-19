@@ -29,6 +29,9 @@
       margin-left: 0
   .sixsteps
     display: none
+  .footer
+    &__menu
+      display: none
 
 @media screen and ( max-width: 890px )
   .row
@@ -94,7 +97,10 @@
       width: 20%
   .input
     color: $light
+    font-size: 1.49rem
     border-bottom: 1px solid rgba($light, 0.15)
+    padding: 0
+    padding-bottom: 4.4px
     &--dark
       font-size: 1.386rem
       letter-spacing: 0.5px
@@ -102,12 +108,15 @@
       &::placeholder
         color: $light
   .label
+    font-size: 1.27rem
     &--dark
       color: rgba($light, 0.6)
       font-size: 1.1rem
       letter-spacing: 0.6px
       
 @media screen and ( max-width: 576px )
+  body
+    background-color: $dark
   .section
     padding: 0
     &-title
@@ -222,7 +231,34 @@
     &__button
       min-width: 100%
       margin-bottom: -2rem
-      
+  .footer
+    background-image: none
+    &__wrap
+      background-color: $dark
+      padding-left: 0
+      padding-right: 0
+    &__form
+      flex-direction: column
+    &__button
+      font-size: 1.2rem
+      padding: 1.4rem 10.9rem
+    &__title
+      font-size: 1.65rem
+      margin-bottom: 4.57rem
+    &__input-group 
+      margin-bottom: 5.48rem
+      &--full-width
+        margin-bottom: 0.7rem
+    &__policy
+      margin-bottom: 5.7rem
+  .policy 
+    &__label
+      &--center
+        justify-content: flex-start
+        font-size: 1.33rem
+  .scroll-up
+    color: $primary
+    border-color: $primary
 
 
 
