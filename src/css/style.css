@@ -425,9 +425,12 @@ template {
   position: fixed;
   bottom: 5px;
   right: 5px;
-  border: 1px solid #131313;
-  color: #131313;
+  border: 1px solid #E3B873;
+  color: #E3B873;
   cursor: pointer; }
+
+label.invalid {
+  color: tomato; }
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -818,10 +821,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.228rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0.1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 0.1rem; }
   .modal__policy {
     margin-bottom: 2.72rem; }
   .modal__button {
@@ -1032,10 +1037,7 @@ img {
     margin: 0;
     margin-bottom: 2.86rem; }
   .swiper-slide__text {
-    margin-right: -4.26rem; }
-  .scroll-up {
-    color: #E3B873;
-    border-color: #E3B873; } }
+    margin-right: -4.26rem; } }
 
 @media screen and (max-width: 650px) {
   .projects {
@@ -1108,7 +1110,8 @@ img {
     flex-direction: column; }
   .footer__button {
     font-size: 1.2rem;
-    padding: 1.4rem 10.9rem; }
+    display: block;
+    min-width: 100%; }
   .footer__title {
     font-size: 1.65rem;
     margin-bottom: 4.57rem; }

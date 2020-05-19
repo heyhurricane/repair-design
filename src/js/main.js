@@ -123,4 +123,83 @@ $(document).ready(function () {
   });
 
   new WOW().init();
+
+  // Валидация форм
+
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: 'Имя не короче 2 символов',
+        maxlength: 'Имя не длиннее 15 символов'
+      },
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формте: name@domain.com"
+      }
+    }
+  });
+
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required",
+      userQuestion: "required"
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: 'Имя не короче 2 символов',
+        maxlength: 'Имя не длиннее 15 символов'
+      },
+      userPhone: "Телефон обязателен",
+      userQuestion: "Если Вы хотите задать вопрос, обязательно его введите",
+    }
+  });
+
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: "required"
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: 'Имя не короче 2 символов',
+        maxlength: 'Имя не длиннее 15 символов'
+      },
+      userPhone: "Телефон обязателен",
+    }
+  });
+  // Маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
+
 });
