@@ -138,39 +138,39 @@ $(document).ready(function () {
     },
     rules: {
       // simple rule, converted to {required:true}
-      userName: {
+      nameUser: {
         required: true,
         minlength: 2,
         maxlength: 15
       },
-      userPhone: {
+      phoneUser: {
         required: true,
         minlength: 17,
         maxlength: 17
       },
       // compound rule
-      userEmail: {
+      emailUser: {
         required: true,
         email: true
       },
-      userСheck: "required"
+      checkUser: "required"
     },
     messages: {
-      userName: {
+      nameUser: {
         required: "Имя обязательно",
         minlength: 'Имя не короче 2 символов',
         maxlength: 'Имя не длиннее 15 символов'
       },
-      userPhone: {
+      phoneUser: {
         required: "Телефон обязателен",
         minlength: 'Телефон должен содержать 10 символов',
         maxlength: 'Телефон должен содержать 10 символов'
       },
-      userEmail: {
+      emailUser: {
         required: "Обязательно укажите email",
         email: "Введите в формте: name@domain.com"
       },
-      userСheck: "Согласие с обработкой данных обязательно"
+      checkUser: "Согласие с обработкой данных обязательно"
     }
   });
 
