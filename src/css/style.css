@@ -375,7 +375,7 @@ template {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.286rem;
   color: #ffffff;
-  padding: 0.5rem 0; }
+  padding: 0.4rem 0; }
   .input::-webkit-input-placeholder {
     color: #ffffff; }
   .input::-moz-placeholder {
@@ -409,7 +409,7 @@ template {
 .policy__label {
   display: flex;
   align-items: center;
-  letter-spacing: 0.9px; }
+  font-size: 1.143rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -418,6 +418,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .scroll-up {
   position: fixed;
@@ -941,6 +943,45 @@ img {
       height: 1px;
       background-color: #E3B873;
       display: block; }
+
+.footer {
+  background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background-color: #181818;
+    max-width: 63.07rem;
+    margin: auto;
+    padding: 1.16rem 12.96rem;
+    margin-bottom: 3.714rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.43rem;
+    text-align: center;
+    margin-bottom: 3.27rem; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 37.142rem; }
+  .footer__input-group {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3.28rem; }
+    .footer__input-group--full-width {
+      flex-basis: 100%;
+      margin-bottom: 2.08rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 3.6rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.2rem 4.8rem; }
+  .footer__menu {
+    background-color: #131313;
+    padding: 3.33rem 0; }
 
 @media screen and (max-width: 1340px) {
   html {
