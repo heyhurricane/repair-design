@@ -411,6 +411,7 @@ template {
   align-items: center;
   font-size: 1.143rem; }
   .policy__label div.invalid {
+    font-size: 1rem;
     margin-top: 2rem; }
   .policy__label::before {
     content: '';
