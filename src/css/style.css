@@ -1067,6 +1067,9 @@ img {
   .footer__inst img {
     width: 28px;
     height: 28px; }
+  .footer__phone {
+    color: #E3B873;
+    text-decoration: none; }
 
 .info {
   display: flex;
@@ -1395,4 +1398,10 @@ img {
       color: #ffffff; }
   .nav__item:hover {
     color: #E3B873;
-    transition: color 0.2s; } }
+    transition: color 0.2s; }
+  .footer__phone {
+    transition: color 0.3s; }
+    .footer__phone:hover {
+      color: #ffffff; }
+  .mail:hover, .inst:hover {
+    transform: scale(1.3); } }
