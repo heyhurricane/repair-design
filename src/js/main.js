@@ -271,4 +271,42 @@ $(document).ready(function () {
   // Маска для телефона
   $('[type=tel]').mask('+7(000) 000-00-00');
 
+  // карта
+
+  // Функция ymaps.ready() будет вызвана, когда
+  // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [47.244729, 39.723187],
+            zoom: 17
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+        // Создаём макет содержимого.
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Наш офис'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/mappin.png',
+            // Размеры метки.
+            iconImageSize: [35, 35],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-5, -38]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark);
+});
+
 });

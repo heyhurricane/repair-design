@@ -1364,7 +1364,9 @@ img {
       display: none; }
   .modal__dialog {
     height: 80%;
-    overflow: scroll; } }
+    overflow: scroll; }
+  .map {
+    width: 70%; } }
 
 @media screen and (min-width: 992px) {
   .button--primary {

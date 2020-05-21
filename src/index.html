@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Урок №24</title>
+  <title>Урок №25</title>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&subset=cirillic" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=12617c21-33fd-4ec8-9166-041baff56ae1&lang=ru_RU" type="text/javascript">
+  </script>
 </head>
 <body>
   <!-- HEADER -->
@@ -657,9 +659,7 @@
           <a href="#" class="mail footer__mail"><img src="img/mail.png" alt="Почта"></a>
           <a href="#" class="inst footer__inst"><img src="img/instagram.png" alt="Инстаграм"></a>
         </div>
-        <div class="map footer__map">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A24d04734cc8a59064bee98debafa4c746ce4cf7df55cfb39d21236370ec83f78&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+        <div id="map" class="map footer__map"></div>
         <!-- /.map footer__map -->
       </div>
       <!-- /.info footer__info -->
