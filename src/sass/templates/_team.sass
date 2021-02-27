@@ -1,11 +1,12 @@
 .team
+  margin-top: -34.9rem
   &__person
     // position: absolute
     display: flex
     flex-direction: column
     text-align: center
     margin: auto
-    margin-top: -5rem
+    margin-top: -5.9rem
     background-color: $light
    
     // padding: 0.59rem 2.14rem
@@ -19,16 +20,61 @@
   &__name
     font-family: 'Yeseva One', cursive
     line-height: 25px
+    margin-bottom: 0.2rem
   &__position
     color: $secondary
   &__experience
+    font-family: 'Yeseva One', cursive
     font-size: 0.93rem
     text-transform: uppercase
     color: $light
     background-color: $primary
     padding: 1rem 0
   &__card
-    margin-bottom: 10rem
+    margin-bottom: 3.9rem
+    position: relative
+  &__heading
+    margin-bottom: 0.9rem
+    color: $light
+  &__image
+    margin-bottom: 1.5rem
+  &text
+    max-width: 32rem
+    margin: auto
+    color: $light
+  &__section-title
+    margin-bottom: 6rem
+  &__row
+    padding: 0px 6.5rem
+  &__typeicon
+    // margin-top: -3.6rem
+    // margin-left: -0.5rem
+    position: absolute
+    top: -3.6rem
+    left: -2.2rem
+  &__text
+    max-width: 40.57rem
+    font-size: 1.428rem
+    line-height: 1.7
+    text-align: center
+    margin: auto
+    &::before
+      content: ''
+      display: block
+      width: 55px
+      height: 2px
+      background-color: $primary
+      margin: auto
+      margin-bottom: -0.6rem
+
+.person
+  &__image
+    display: block
+    margin: auto
     
+
+.mobile
+  display: none
+
 
     

@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Урок №25</title>
+  <title>Турецкий ремонт в Ростове-на-Дону</title>
   <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap&subset=cirillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=12617c21-33fd-4ec8-9166-041baff56ae1&lang=ru_RU" type="text/javascript">
-  </script>
-</head>
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/></head>
 <body>
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64400017, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/64400017" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <!-- HEADER -->
   <header class="header">
     <div class="container"> 
@@ -20,16 +20,16 @@
           <a href="index.html" class="logo__link">Repair Design Project</a>
         </div>
         <nav class="nav menu__nav">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
-          <a href="#" class="nav__item">Замер</a>
-          <a href="#" class="nav__item">Команда</a>
-          <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#" class="nav__item" data-index="hero">Главная</a>
+          <a href="#" class="nav__item" data-index="projects">Проекты</a>
+          <a href="#" class="nav__item" data-index="measure">Замер</a>
+          <a href="#" class="nav__item" data-index="team">Команда</a>
+          <a href="#" class="nav__item" data-index="clients">Отзывы</a>
+          <a href="#" class="nav__item" data-index="contacts">Контакты</a>
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          <button class="button contacts__button button--primary" onclick="ym('64400017','reachGoal','buttoncall')" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
       <!-- /.menu -->
@@ -38,16 +38,16 @@
   </header>
   <!--  MAIN -->
   <main>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="instagram hero__instagram">
-        <a href="www.instagram.com" class="instagram__link">Instagram</a>
+        <a href="https://www.instagram.com/" class="instagram__link">Instagram</a>
       </div>
       <div class="container">
         <div class="hero__content">
           <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.1s">Турецкий ремонт &nbsp;<br>в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
           <p class="hero__text wow fadeInRight" data-wow-delay="0.3s">Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы</p>
           <button class="button hero__button button--primary hero__button--primary wow fadeInRight" data-toggle="modal" data-wow-delay="0.5s">Рассчитать стоимость</button>
-          <button class="button hero__button button--outline hero__button--outline  wow fadeInRight" data-wow-delay="0.5s">Отправить заявку</button>
+          <button class="button hero__button button--outline hero__button--outline  wow fadeInRight" data-toggle="modal" data-wow-delay="0.5s">Отправить заявку</button>
         </div>
         <!-- /.hero__content -->
       </div>
@@ -57,86 +57,87 @@
     <!-- /.hero -->
 
     <!-- ПРОЕКТЫ -->
-    <section class="section section--dark projects" id="project">
+    <section class="section section--dark projects">
       <div class="container">
         <div class="row">
           <div class="col-40">
-            <div class="section-title section-title--left">
+            <div class="section-title section-title--left" id="projects">
               <h2 class="section-title__heading section-title__heading--primary wow fadeInLeft">Завершённые <span class="section-title__word">проекты</span></h2>
               <p class="section-title__text section-title__text--projects">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
               <!-- /.section-title__image -->
             </div>
             <!-- Slider main container -->
-            <div class="projectswipe-container swiper-container swiper-no-swiping" id="1">
+            <!-- id="1" -->
+            <div class="projectswipe-container swiper-container swiper-no-swiping">
               <!-- Additional required wrapper -->
               <div class="projectswipe-wrapper swiper-wrapper">
                   <!-- Slides -->
                   <!-- first slide -->
                   <div class="projectswipe-slide swiper-slide">
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Город:</h3>
-                      <span class="swiper-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">Ростов-на-Дону<br>ЖК Адмирал</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Площадь:</h3>
-                      <span class="swiper-slide__value">81 м2</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">81 м2</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
-                      <span class="swiper-slide__value">3,5 месяца</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">3,5 месяца</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Стоимость:</h3>
-                      <span class="swiper-slide__value">По запросу</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">По запросу</span>
                     </div>
                     <!-- /.swiper-slide__text -->
                   </div>
                   <!-- second slide -->
                   <div class="projectswipe-slide swiper-slide">
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Город:</h3>
-                      <span class="swiper-slide__value">Ростов-на-Дону<br>ЖК Центральный</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">Ростов-на-Дону<br>ЖК Центральный</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Площадь:</h3>
-                      <span class="swiper-slide__value">75,4 м2</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">75,4 м2</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
-                      <span class="swiper-slide__value">3 месяца</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">3 месяца</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Стоимость:</h3>
-                      <span class="swiper-slide__value">По запросу</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">По запросу</span>
                     </div>
                     <!-- /.swiper-slide__text -->
                   </div>
                   <!-- third slide -->
                   <div class="projectswipe-slide swiper-slide">
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Город:</h3>
-                      <span class="swiper-slide__value">Ростов-на-Дону<br>ЖК Екатерининский</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Город:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">Ростов-на-Дону<br>ЖК Екатерининский</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Площадь:</h3>
-                      <span class="swiper-slide__value">120 м2</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Площадь:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">120 м2</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
-                      <span class="swiper-slide__value">4,5 месяца</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Срок ремонта:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">4,5 месяца</span>
                     </div>
                     <!-- /.swiper-slide__text -->
-                    <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Стоимость:</h3>
-                      <span class="swiper-slide__value">По запросу</span>
+                    <div class="swiper-slide__text projectswipe-slide__text">
+                      <h3 class="swiper-slide__heading projectswipe-slide__heading">Стоимость:</h3>
+                      <span class="swiper-slide__value projectswipe-slide__value">По запросу</span>
                     </div>
                     <!-- /.swiper-slide__text -->
                   </div>
@@ -184,12 +185,14 @@
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video wow fadeIn">
-          <img src="img/playicon.svg" alt="play icon" class="video__play">
+        <div class="control__video video wow fadeIn"  id="player">
+          <a data-fancybox href="https://www.youtube.com/watch?v=RHzzLqJWqHs&amp;autoplay=1" class="video__play">
+            <img src="img/playicon.svg" alt="play icon">
+        </a> 
         </div>
         <!-- /.control__video video -->
         <p class="control__text">На каждом объекте установлена ​​камера, которая транслирует ход работы на часах. В любой момент вы можете зайти на наш сайт и следить за ходом работы в вашей квартире. Посмотрите прямую трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы получить ссылку на трансляцию.</p>
-        <form action="#" class="form control__form">
+        <form action="sendcontrol.php" method="POST" class="form control__form">
           <div class="control__input-group">
             <label for="user-name" class="label form__label label--dark">Имя</label>
             <input type="text" name="userName" class="input form__input control__input input--dark" id="user-name" placeholder="Как вас зовут:">
@@ -200,7 +203,7 @@
             <input type="tel" name="userPhone" class="input form__input control__input input--dark" id="user-phone" placeholder="Ваш номер телефона:">
           </div>
           <!-- /.input-group -->
-          <button class="button button--primary control__button">Отправить</button>
+          <button class="button button--primary control__button" onclick="ym('64400017','reachGoal','buttonform')">Отправить</button>
           <div class="policy control__policy">
             <input type="checkbox" name="userСheck"  class="policy__checkbox" id="policycheckbox" checked>
             <label for="policycheckbox" class="policy__label control__policy-label">Я соглашаюсь с обработкой данных</label>
@@ -223,7 +226,7 @@
           <!-- /.section-title__image -->
         </div>
         <div class="row">
-          <div class="col-30">
+          <div class="col30">
             <div class="card types__card">
               <img src="img/types/type1.jpg" alt="Косметический ремонт" class="card__image">
               <div class="card__text">
@@ -246,8 +249,8 @@
             </div>
             <!-- /.card -->
           </div>
-          <!-- /.col-30 -->
-          <div class="col-30">
+          <!-- /.col30 -->
+          <div class="col30">
             <div class="card types__card">
               <img src="img/types/type2.jpg" alt="Капитальный ремонт" class="card__image">
               <div class="card__text">
@@ -269,8 +272,8 @@
             </div>
             <!-- /.card -->
           </div>
-          <!-- /.col-30 -->
-          <div class="col-30">
+          <!-- /.col30 -->
+          <div class="col30">
             <div class="card types__card">
               <img src="img/types/type3.jpg" alt="Дизайнерский ремонт" class="card__image">
               <div class="card__text">
@@ -292,7 +295,7 @@
             </div>
             <!-- /.card -->
           </div>
-          <!-- /.col-30 -->
+          <!-- /.col30 -->
         </div>
         <!-- /.row -->
       </div>
@@ -300,6 +303,155 @@
     </section>
     <!-- /.section types -->
 
+    <!-- ВЫЗОВ ЗАМЕРЩИКА -->
+    <section class="section measure">
+      <div class="container">
+        <div class="row">
+          <div class="col60">
+            <div class="items measure__items">
+              <div class="item measure__item1">
+                <span class="measure__text measure__text1">01</span>
+                <span class="item__text">Наш специалист приедет для замеров в день контакта или назначит удобную для вас дату</span>
+              </div>
+              <!-- /.item measure__item -->
+              <div class="item measure__item2">
+                <span class="measure__text">02</span>
+                <span class="item__text">Бесплатный замер</span>
+              </div>
+              <!-- /.item measure__item -->
+              <div class="item measure__item3">
+                <span class="measure__text">03</span>
+                <span class="item__text">Бесплатная консультация</span>
+              </div>
+              <!-- /.item measure__item -->
+              <div class="item measure__item4">
+                <span class="measure__text">04</span>
+                <span class="item__text">Получите смету расходов и сроки вашего будущего ремонта</span>
+              </div>
+              <!-- /.item measure__item -->
+            </div>
+            <!-- /.items -->
+          </div>
+          <!-- /.col60 -->
+          <div class="col40">
+            <div class="measureform">
+              <h3 class="measure__title" id="measure">Оставьте заявку на бесплатный выезд&nbsp;замерщика</h3>
+              <form action="sendmeasure.php" method="POST" class="form measure__form">
+                <div class="input-group measure__input-group">
+                  <label for="measurenameofuser" class="label form__label label--light">Имя</label>
+                  <input type="text" name="measurenameUser" class="input form__input measure__input" id="measurenameofuser" placeholder="Как вас зовут:">
+                </div>
+                <!-- /.input-group modal__input-group -->
+                <div class="input-group measure__input-group">
+                  <label for="measurephoneofuser" class="label form__label label--light">Телефон</label>
+                  <input type="tel" name="measurephoneUser" class="input form__input measure__input" id="measurephoneofuser" placeholder="Ваш телефон:">
+                </div>
+                <!-- /.input-group modal__input-group -->
+                <div class="input-group measure__input-group measure__input-group--last">
+                  <label for="measureemailofuser" class="label form__label label--light">Email</label>
+                  <input type="email" name="measureemailUser" class="input form__input measure__input" id="measureemailofuser" placeholder="Ваш email:">
+                </div>
+                <!-- /.input-group modal__input-group -->         
+                <div class="policy measure__policy">
+                  <input type="checkbox"  name="measurecheckUser" class="policy__checkbox"  id="measurepolicycheck" checked>
+                  <label for="measurepolicycheck" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                  <!-- <div class="lastname"></div> -->
+                </div>
+                <!-- /.policy -->
+                <button class="button button--primary measure__button">Вызвать замерщика</button>
+              </form>
+            </div>
+            <!-- /.measureform -->
+            <div class="economy measure__economy">
+              <img class="economy__icon" src="img/new/pig.png" alt="Moneybank">
+              <span class="economy__text">Это поможет сэкономить 10 - 20% от стоимости материалов</span>
+            </div>
+            <!-- /.measure__economy -->
+          </div>
+          <!-- /.col40 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section measure -->
+
+    <!-- СТИЛИ ИНТЕРЬЕРА -->
+    <section class="section styles">
+      <div class="container">
+        <div class="row styles__row">
+          <div class="col30 styles__col30">
+            <div class="section-title section-title--left styles__title wow fadeInLeft">
+              <h2 class="section-title__heading section-title__heading--primary styles__heading wow fadeInLeft">Мы реализуем ваши самые&nbsp;смелые фантазии</h2>
+            </div>
+            <div class="styles__list">
+              <a href="javascript:void(0);" class="styles__name stylename stylesfirst" id="1">Американская классика</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="2">Имперский стиль</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="3">Классика</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="4">Лофт</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="5">Минимализм</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="6">Прованс</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="7">Романтизм</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="8">Скандинавский стиль</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="9">Средиземноморский стиль</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="10">Хайтек</a>
+              <a href="javascript:void(0);" class="styles__name stylename" id="11">Эклектизм</a>
+            </div>
+            <!-- /.styles-list -->
+          </div>
+          <!-- /.col-30 -->
+          <div class="col-60 styles__col60">
+            <div class="image-column styles__column1">
+              <img src="img/styles/american-classic/amclassic1.jpg" alt="Интерьер" class="styles__image1">
+              <img src="img/styles/american-classic/amclassic3.jpg" alt="Интерьер" class="styles__image3 styles__image3">
+            </div>
+            <!-- /.image-column -->
+            <div class="image-column styles__column2">
+              <img src="img/styles/american-classic/amclassic2.jpg" alt="Интерьер" class="styles__image2">
+              <img src="img/styles/american-classic/amclassic4.jpg" alt="Интерьер" class="styles__image4">
+            </div>
+            <!-- /.image-column -->
+          </div>
+          <!-- /.col-60 -->
+        </div>
+        <!-- /.row -->
+        <div class="styleSwiper">
+          <div class="stylesswipe-container swiper-container swiper-no-swiping swiper-container--photo">
+            <!-- Additional required wrapper -->
+            <div class="stylesswipe-wrapper swiper-wrapper">
+              <!-- Slides -->
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile1.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile2.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile3.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile4.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile5.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile6.jpg" alt="">
+              </div>
+              <div class="stylesswipe-slide swiper-slide">
+                <img src="img/styles/mobile/mobile7.jpg" alt="">
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="stylesswipe-button-prev swiper-button-prev"></div>
+            <div class="stylesswipe-button-next swiper-button-next"></div>
+          </div>
+        </div>
+        <!-- /.styleSwiper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section styles -->
 
     <!-- ДИЗАЙН ПРОЕКТ -->
     <section class="section design">
@@ -309,11 +461,11 @@
           <div class="section-title__image wow fadeIn">
             <img src="img/design.svg" alt="design">
           </div>
-          <p class="section-title__text">Дизайн-проект не только помогает сделать ремонт&nbsp;вашей квартиры более современным,&nbsp;но<br>и значительно удешевляет материалы и сокращает&nbsp;время ремонтных работ</p>
+          <p class="section-title__text design__title-text">Дизайн-проект не только помогает сделать ремонт&nbsp;вашей квартиры более современным, но и&nbsp;значительно удешевляет материалы и сокращает&nbsp;время ремонтных работ</p>
           <!-- /.section-title__image -->
         </div>
         <div class="row">
-          <div class="col-30">
+          <div class="col30">
             <div class="card design__card">
               <img src="img/designs/design1.jpg" alt="Минимальный" class="card__image">
               <div class="card__text">
@@ -335,8 +487,8 @@
               </div>
             </div>
           </div>
-          <!-- /.col-30 -->
-          <div class="col-30">
+          <!-- /.col30 -->
+          <div class="col30">
             <div class="card design__card">
               <img src="img/designs/design2.jpg" alt="Стандартный" class="card__image">
               <div class="card__text">
@@ -364,8 +516,8 @@
               </div>
             </div>
           </div>
-          <!-- /.col-30 -->
-          <div class="col-30">
+          <!-- /.col30 -->
+          <div class="col30">
             <div class="card design__card">
               <img src="img/designs/design3.jpg" alt="Полный" class="card__image">
               <div class="card__text">
@@ -403,7 +555,7 @@
               </div>
             </div>
           </div>
-          <!-- /.col-30 -->
+          <!-- /.col30 -->
         </div>
         <!-- /.row -->
       </div>
@@ -438,8 +590,8 @@
                     <div class="swiper-slide__text--step">
                       <h3 class="swiper-slide__heading swiper-slide__heading--light">2/6</h3>
                       <h4 class="swiper-slide__heading swiper-slide__heading--step">Составление<br>сметы</h4>
-                      <p class="swiper-slide__value swiper-slide__value--step">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                      <p class="swiper-slide__value swiper-slide__value--step">Оценщик приходит, чтобы измерить комнату.<br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">Составление смет – это необходимая операция при любом масштабе строительства или ремонта. Здесь очень важна точность и правильность оформления, ведь на основании составленной сметы на ремонт в дальнейшем будут выделены денежные средства заказчиком.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">С нами Вам не придётся переживать о лишних тратах, ведь наши специалисты - мастера в этом вопросе.</p>
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
@@ -447,8 +599,8 @@
                     <div class="swiper-slide__text--step">
                       <h3 class="swiper-slide__heading swiper-slide__heading--light">3/6</h3>
                       <h4 class="swiper-slide__heading swiper-slide__heading--step">Разработка<br>дизайн проекта</h4>
-                      <p class="swiper-slide__value swiper-slide__value--step">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                      <p class="swiper-slide__value swiper-slide__value--step">Оценщик приходит, чтобы измерить комнату.<br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">Наши дизайнеры работают в различных направлениях и стилях, поэтому вы непременно найдете того специалиста, который сможет всецело удовлетворить все ваши требования.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">На данном этапе идёт обсуждение будущего дизайна квартиры. Не стесняйтесь говорить нам о своих пожеланиях, помните, в вопросах дизайна интерьера не бывает мелочей!</p>
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
@@ -456,8 +608,8 @@
                     <div class="swiper-slide__text--step">
                       <h3 class="swiper-slide__heading swiper-slide__heading--light">4/6</h3>
                       <h4 class="swiper-slide__heading swiper-slide__heading--step">Закупка расходных<br>материалов</h4>
-                      <p class="swiper-slide__value swiper-slide__value--step">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                      <p class="swiper-slide__value swiper-slide__value--step">Оценщик приходит, чтобы измерить комнату.<br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">На основании сметы и утверждённого дизайна происходит закупка расходных материалов.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">Мы работаем только с лучшими производителями и качественными материалами, которые прослужат Вам не один десяток лет.</p>
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
@@ -465,8 +617,8 @@
                     <div class="swiper-slide__text--step">
                       <h3 class="swiper-slide__heading swiper-slide__heading--light">5/6</h3>
                       <h4 class="swiper-slide__heading swiper-slide__heading--step">Ремонтно-&nbsp;отделочные<br>работы</h4>
-                      <p class="swiper-slide__value swiper-slide__value--step">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                      <p class="swiper-slide__value swiper-slide__value--step">Оценщик приходит, чтобы измерить комнату.<br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">Мы осуществляем отделочные работы любого уровня сложности в различных помещениях. Все виды внутренней отделки пола, стен, потолков – ежедневная работа наших мастеров.</p>
+                      <p class="swiper-slide__value swiper-slide__value--step">Наши мастера - высококвалифицированные специалисты, которые могут воплотить любую дизайнерскую идею в жизнь.</p>
                     </div>
                   </div>
                   <!-- /.swiper-slide -->
@@ -474,9 +626,7 @@
                     <div class="swiper-slide__text--step">
                       <h3 class="swiper-slide__heading swiper-slide__heading--light">6/6</h3>
                       <h4 class="swiper-slide__heading swiper-slide__heading--step">Приемка-&nbsp;сдача<br>работ</h4>
-                      <p class="swiper-slide__value swiper-slide__value--step">После вашего звонка мы идем к вам, чтобы проконсультироваться и измерить помещения вашей квартиры. Во время нашей встречи вы можете задать абсолютно любые вопросы, касаемо ремонта.</p>
-                      <p class="swiper-slide__value swiper-slide__value--step">Оценщик приходит, чтобы измерить комнату.<br>Он проконсультирует вас по вопросам техники ремонта, дизайна квартиры, сроков ремонта квартиры в целом и отдельных ее этапов.</p>
-                    </div>
+                      <p class="swiper-slide__value swiper-slide__value--step">После завершения ремонта мы оформляем Акт сдачи-приёмки работ, который подписывается обеими сторонами.</p>                    </div>
                   </div>
                   <!-- /.swiper-slide -->
               </div>             
@@ -557,21 +707,23 @@
     <!-- /.section sixsteps -->
 
     <!-- НАША КОМАНДА -->
-    <div class="section team">
+    <section class="section team" >
       <div class="container">
-        <div class="section-title team__section-title">
-          <h2 class="section-title__heading wow fadeIn">Наша команда</h2>
-          <div class="section-title__image wow fadeIn">
+        <div class="section-title team__section-title" id="team">
+          <h2 class="section-title__heading team__heading wow fadeIn">Наша команда</h2>
+          <div class="section-title__image team__image wow fadeIn">
             <img src="img/team.svg" alt="team">
           </div>
-          <p class="section-title__text">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
+          <p class="teamtext section-title__text">Наша команда помогла стать счастливее более чем 500 семьям, и мы не собираемся останавливаться</p>
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="row">
+        <div class="row team__row">
           <div class="col-30">
             <div class="card team__card">
-              <img src="img/team/team1.jpg" alt="" class="team__image">
+              <img src="img/team/teamicon1.png" alt="Менеджер" class="team__typeicon">
+              <img src="img/team/team-1.jpg" alt="" class="person__image">
+              <img src="img/team/team1.jpg" alt="" class="mobile">
               <div class="person team__person">
                 <div class="team__about">
                   <strong class="team__name">Алексей Колмаков</strong>
@@ -586,7 +738,9 @@
           <!-- /.col-30 -->
           <div class="col-30">
             <div class="card team__card">
-              <img src="img/team/team2.jpg" alt="" class="team__image">
+              <img src="img/team/teamicon2.png" alt="Дизайнер" class="team__typeicon">
+              <img src="img/team/team-2.png" alt="" class="person__image">
+              <img src="img/team/team2.png" alt="" class="mobile">
               <div class="person team__person">
                 <div class="team__about">
                   <strong class="team__name">Алиса Сухорукова</strong>
@@ -601,7 +755,9 @@
           <!-- /.col-30 -->
           <div class="col-30">
             <div class="card team__card">
-              <img src="img/team/team3.jpg" alt="" class="team__image">
+              <img src="img/team/teamicon3.png" alt="Бригадир" class="team__typeicon">
+              <img src="img/team/team-3.png" alt="" class="person__image">
+              <img src="img/team/team3.jpg" alt="" class="mobile">
               <div class="person team__person">
                 <div class="team__about">
                   <strong class="team__name">Давид Волынев</strong>
@@ -615,12 +771,114 @@
           </div>
           <!-- /.col-30 -->
         </div>
-        <p class="team__text">Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+        <div class="team__text">
+          <p>Каждый сотрудник нашей компании является квалифицированным штатным специалистом с опытом работы от 6 лет. У нас нет  гастарбайтеров, каждый сотрудник выполняет работу, соответствующую его специальности.</p>
+        </div>
+        
         <!-- /.row -->
       </div>
       <!-- /.container -->
-    </div>
+    </section>
     <!-- /.section team -->
+
+  <!-- НАШИ КЛИЕНТЫ -->
+  <section class="section clients">
+    <div class="container">
+      <div class="section-title clients__section-title">
+        <h2 class="section-title__heading clients__heading wow fadeIn" id="clients">Наши клиенты</h2>
+        <div class="section-title__image clients__imageheading wow fadeIn">
+          <img src="img/clients.svg" alt="clients">
+        </div>
+        <p class="clientstext section-title__text">80% наших клиентов рекомендуют нас своим знакомым и друзьям</p>
+        <!-- /.section-title__image -->
+      </div>
+      <!-- /.section-title -->
+      <div class="row clients__row">
+        <div class="col31">
+          <div class="card clients__card">
+            <div class="clients__about">
+              <img src="img/clients/client1.png" alt="Клиент" class="clients__image">
+              <span class="clients__name">Савельева Екатерина Львовна</span>
+            </div>
+            <!-- /.client__about -->
+            <div class="card__text clients__text">
+              <p class="feedback clients__feedback">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарна, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Цены демократические. Я рекомендую этих мастеров.</p>
+            </div>
+            <div class="clients__block">
+              <div class="area clients__area">
+                <img src="img/clients/area.svg" class="clients__icon" alt="площадь">
+                <strong class="clients__square">40 м<sup>2</sup></strong>
+              </div>
+              <!-- /.area client__area -->
+              <div class="duration clients__duration">
+                <img src="img/clients/calendar.svg" class="clients__iconday" alt="Календарь">
+                <strong class="clients__days">48 дней</strong>
+              </div>
+            </div>
+            <!-- /.client__block -->
+          </div>
+          <!-- /.card client__card -->
+        </div>
+        <!-- /.col30 -->
+        <div class="col31">
+          <div class="card clients__card">
+            <div class="clients__about">
+              <img src="img/clients/client2.png" alt="Клиент" class="clients__image">
+              <span class="clients__name">Большов Михаил Анатольевич</span>
+            </div>
+            <!-- /.client__about -->
+            <div class="card__text clients__text">
+              <p class="feedback clients__feedback">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Я рекомендую этих мастеров.</p>
+            </div>
+            <div class="clients__block">
+              <div class="area clients__area">
+                <img src="img/clients/area.svg" class="clients__icon" alt="площадь">
+                <strong class="clients__square">90 м<sup>2</sup></strong>
+              </div>
+              <!-- /.area client__area -->
+              <div class="duration clients__duration">
+                <img src="img/clients/calendar.svg" class="clients__iconday" alt="Календарь">
+                <strong class="clients__days">128 дней</strong>
+              </div>
+            </div>
+            <!-- /.client__block -->
+          </div>
+          <!-- /.card client__card -->
+        </div>
+        <!-- /.col30 -->
+        <div class="col31">
+          <div class="card clients__card">
+            <div class="clients__about">
+              <img src="img/clients/client3.png" alt="Клиент" class="clients__image">
+              <span class="clients__name">Хасанов Даниил Муратович</span>
+            </div>
+            <!-- /.client__about -->
+            <div class="card__text clients__text">
+              <p class="feedback clients__feedback">Я хочу поблагодарить ребят за их работу. Они вложили душу в ремонт. Я очень благодарен, что сделали как для самих себя. Большое спасибо, я выражаю проектному менеджеру за его профессионализм и подход. Процесс ремонта был завершен быстрее, чем ожидалось. Команда мобильная и профессиональная. Работы выполнены качественно без нареканий. Качество высокое. Цены демократические.</p>
+            </div>
+            <div class="clients__block">
+              <div class="area clients__area">
+                <img src="img/clients/area.svg" class="clients__icon" alt="площадь">
+                <strong class="clients__square">56 м<sup>2</sup></strong>
+              </div>
+              <!-- /.area client__area -->
+              <div class="duration clients__duration">
+                <img src="img/clients/calendar.svg" class="clients__iconday" alt="Календарь">
+                <strong class="clients__days">86 дней</strong>
+              </div>
+            </div>
+            <!-- /.client__block -->
+          </div>
+          <!-- /.card client__card -->
+        </div>
+        <!-- /.col30 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section team -->
+
   </main>
 
   <!-- FOOTER -->
@@ -628,7 +886,7 @@
     <div class="container">
       <div class="footer__wrap"> 
         <h3 class="footer__title">Остались вопросы?</h3>
-        <form action="#" class="form footer__form">
+        <form action="sendfooter.php" method="POST" class="form footer__form">
           <div class="input-group footer__input-group">
             <label for="name-user" class="label form__label label--light">Имя</label>
             <input type="text" name="username" class="input form__input footer__input" id="name-user" placeholder="Как вас зовут:">
@@ -649,17 +907,21 @@
             <label for="check-policy" class="policy__label policy__label--center">Я соглашаюсь с обработкой данных</label>
           </div>
           <!-- /.policy -->
-          <button class="button button--primary footer__button">Отправить</button>
+          <button class="button button--primary footer__button" onclick="ym('64400017','reachGoal','buttonform')">Отправить</button>
         </form>
       </div>
       <!-- /.footer-wrap -->
-      <div class="info footer__info">
+      <div class="info footer__info" id="contacts">
         <h3 class="footer__title footer__title--primary">Ростов на дону, Торговый центр Plaza Прямой&nbsp;телефон <a href="tel:+79997683299" class="footer__phone">+7&nbsp;(999)&nbsp;768&nbsp;32&nbsp;99</a></h3>
         <div class="links footer__links">
-          <a href="mailto:" class="mail footer__mail"><img src="img/mail.png" alt="Почта"></a>
-          <a href="#" class="inst footer__inst"><img src="img/instagram.png" alt="Инстаграм"></a>
+          <a href="mailto:example@example.com" class="mail footer__mail"><img src="img/mail.png" alt="Почта"></a>
+          <a href="https://www.instagram.com/" class="inst footer__inst"><img src="img/instagram.png" alt="Инстаграм"></a>
         </div>
-        <div id="map" class="map footer__map"></div>
+        <div class="ymap-container">
+          <!-- <div class="loader loader-default"></div> -->
+          <div id="map" class="map footer__map"></div>
+        </div><!-- .ymap-container -->
+        
         <!-- /.map footer__map -->
       </div>
       <!-- /.info footer__info -->
@@ -672,16 +934,16 @@
             <a href="index.html" class="logo__link">Repair Design Project</a>
           </div>
           <nav class="nav menu__nav">
-            <a href="#" class="nav__item">Главная</a>
-            <a href="#" class="nav__item">Проекты</a>
-            <a href="#" class="nav__item">Замер</a>
-            <a href="#" class="nav__item">Команда</a>
-            <a href="#" class="nav__item">Отзывы</a>
-            <a href="#" class="nav__item">Контакты</a>
+            <a href="#" class="nav__item" data-index="hero">Главная</a>
+            <a href="#" class="nav__item" data-index="projects">Проекты</a>
+            <a href="#" class="nav__item" data-index="measure">Замер</a>
+            <a href="#" class="nav__item" data-index="team">Команда</a>
+            <a href="#" class="nav__item" data-index="clients">Отзывы</a>
+            <a href="#" class="nav__item" data-index="contacts">Контакты</a>
           </nav>
           <div class="contacts menu__contacts">
             <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-            <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+            <button class="button contacts__button button--primary" onclick="ym('64400017','reachGoal','buttoncall')" data-toggle="modal">Заказать звонок</button>
           </div>
         </div>
         <!-- /.menu -->
@@ -697,7 +959,7 @@
     <div class="modal__dialog">
       <button class="modal__close"></button>
       <h3 class="modal__title">Оставьте заявку и наш менеджер свяжется с вами</h3>
-      <form action="#" class="form modal__form">
+      <form action="sendmodal.php" method="POST" class="form modal__form">
         <div class="input-group modal__input-group">
           <label for="nameofuser" class="label form__label label--light">Имя</label>
           <input type="text" name="nameUser" class="input form__input modal__input" id="nameofuser" placeholder="Как вас зовут:">
@@ -719,7 +981,7 @@
           <div class="lastname"></div>
         </div>
         <!-- /.policy -->
-        <button class="button button--primary modal__button">Отправить заявку</button>
+        <button class="button button--primary modal__button" onclick="ym('64400017','reachGoal','buttonform')">Отправить заявку</button>
       </form>
       <!-- /.form modal__form -->
     </div>
@@ -727,14 +989,27 @@
   </div>
   <!-- /.modal -->
 
+  <!-- СООБЩЕНИЕ ОБ ОТПРАВКЕ ФОРМЫ -->
+  <div class="message">
+    <div class="message__dialog">
+      <h3 class="message__title">Форма отправлена!<br>Наш менеджер свяжется с Вами в течение 15 минут</h3>
+      <button class="button button--primary message__button">Ок!</button>
+    </div>
+    <!-- /.message__dialog -->
+  </div>
+  <!-- /.message -->
+
   <!-- КНОПКА ПРОКРУТКИ ВВЕРХ -->
   <div class="scrollup">
     <button class="button button--outline scroll-up">Наверх</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=12617c21-33fd-4ec8-9166-041baff56ae1&lang=ru_RU;loadByRequire=1"></script> -->
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
